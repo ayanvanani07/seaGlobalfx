@@ -1,0 +1,143 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.marketsOverview-section {
+    padding: 120px 0;
+    background: #141414;
+    position: relative;
+
+    .container3 {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            align-items: center;
+
+            .grid-items-mo {
+                h2 {
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 105%;
+                    color: #Fff;
+                    @include GCarturmDemo-SemiBold;
+
+                    span {
+                        background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                        -webkit-text-fill-color: #0000;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+
+                    }
+                }
+            }
+
+            .grid-items-mo-card {
+                background: linear-gradient(#ffffff1a 0%, #fff0 100%);
+                border-radius: 24px;
+                height: 100%;
+                padding: 16px;
+                transition: transform .3s, box-shadow .3s;
+                position: relative;
+
+                .card-body {
+                    .card-img {
+                        transition: .3s ease-in-out;
+
+                        img {
+                            width: 100%;
+                            transition: transform .3s;
+                            display: block;
+                        }
+                    }
+
+                    .card-content {
+                        padding: 16px 0 0;
+
+                        h4 {
+                            color: #f5f5f5;
+                            margin: 0 0 8px;
+                            @include GCarturmDemo-Medium;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 105%;
+                        }
+
+                        p {
+                            color: #747474;
+                            @include Euclid-reguler;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 105%;
+                        }
+                    }
+                }
+            }
+
+            .grid-items-mo-card::before {
+                content: "";
+                -webkit-mask-composite: xor;
+                pointer-events: none;
+                background: linear-gradient(#fff3 0%, #0000 100%);
+                border-radius: 24px;
+                padding: 1px;
+                transition: all .3s ease-in-out;
+                position: absolute;
+                inset: 0;
+                -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                -webkit-mask-position: 0 0, 0 0;
+                -webkit-mask-size: auto, auto;
+                -webkit-mask-repeat: repeat, repeat;
+                -webkit-mask-clip: content-box, border-box;
+                -webkit-mask-origin: content-box, border-box;
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                -webkit-mask-source-type: auto, auto;
+                mask-mode: match-source, match-source;
+            }
+
+            .grid-items-mo-card:hover::before {
+                background: linear-gradient(260deg, #ffffffb3 0%, #0000 100%);
+            }
+
+            .grid-items-mo-card:hover {
+                .card-body {
+
+
+                    .card-img {
+
+                        transform: scale(1.055);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .doller {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+
+        img {
+            max-width: 260px;
+            display: block;
+            position: relative;
+        }
+    }
+}
+
+.marketsOverview-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    filter: blur(250px);
+    background: #d9d9d9;
+    width: 198px;
+    height: 252px;
+    border-radius: 352px;
+}

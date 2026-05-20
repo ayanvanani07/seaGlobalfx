@@ -1,0 +1,135 @@
+@use '../../scss/main.scss' as *;
+@use '../../scss/theme/theme.scss' as *;
+@use '../../scss/typography/typography.scss' as *;
+
+.marquee-section {
+    height: 83px;
+    background-color: #000;
+
+    .marquee-animated {
+        display: flex;
+        gap: 10px;
+        color: #ffff;
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            position: relative;
+            margin: 4px 0;
+            padding: 8px;
+            border-right: 1px solid #1f1f1f;
+            ;
+
+            .grid-items {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .countryImg-name {
+                    display: flex;
+                    gap: 6px;
+
+                    .countryImg {
+                        position: relative;
+                        width: 24px;
+                        height: 24px;
+
+                        .country1 {
+                            display: flex;
+                            justify-content: start;
+                            width: 16px;
+                            height: 16px;
+                            object-fit: cover;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            z-index: 1;
+                        }
+
+                        .country2 {
+                            display: flex;
+                            justify-content: start;
+                            width: 16px;
+                            height: 16px;
+                            object-fit: cover;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+
+                        .gold {
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .names {
+                        p {
+                            font-size: 16px;
+                            line-height: 26px;
+                            font-weight: 500;
+                            @include Euclid-reguler;
+                        }
+                    }
+                }
+
+                .data-info {
+                    display: flex;
+
+                    .doller {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        h3 {
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            // @include Euclid-reguler;
+                        }
+
+                        span {
+                            font-size: 11px;
+                            font-weight: 400;
+                            letter-spacing: 0.4px;
+                            line-height: 16px;
+                            text-transform: uppercase;
+                            @include Euclid-reguler;
+                        }
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        margin-left: 6px;
+                        color: red;
+                        @include Euclid-reguler;
+                    }
+                }
+
+            }
+
+            .graphImg {
+                width: 162px;
+                height: 58px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        // .grid::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     border-inline-end: 1px solid #ebebeb;
+        // }
+
+    }
+}

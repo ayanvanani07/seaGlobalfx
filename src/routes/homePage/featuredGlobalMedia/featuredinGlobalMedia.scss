@@ -1,0 +1,109 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.featuredGlobalMedia-section {
+    background: #f1f1f1;
+    padding-bottom: 110px;
+
+    .flexbox {
+        padding-left: max(20px, 50vw - 620px);
+        display: flex;
+        gap: 40px;
+
+        .content {
+            width: 480px;
+
+            h2 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 105%;
+                margin: 0 0 8px;
+                @include GCarturmDemo-SemiBold;
+                background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+                -webkit-text-fill-color: #0000;
+                background-clip: text;
+                -webkit-background-clip: text;
+
+                span {
+                    background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+
+            p {
+                color: #747474;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 105%;
+                @include Euclid-reguler;
+            }
+        }
+
+        .marquee-animations {
+            width: calc(100% - 480px);
+            position: relative;
+
+            .mini-card-marquee {
+                display: flex;
+                min-width: auto;
+                align-items: center;
+
+                .companyLogo {
+                    background: #0000000d;
+                    border-radius: 8.096px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 152px;
+                    max-height: 152px;
+                    height: 52px;
+                    margin-right: 10px;
+
+                    img {
+                        max-width: 70%;
+                        height: 50%;
+                        display: block;
+                        object-fit: contain;
+                    }
+                }
+
+
+                .companyLogo:nth-child(2) {
+                    filter: brightness(0.5);
+
+                }
+
+                .companyLogo:nth-child(4) {
+                    filter: brightness(0.5);
+
+                }
+
+                .last-marquee {
+                    filter: brightness(0.5);
+
+                }
+            }
+
+
+
+            .spacer-marquee {
+                padding: 10px 0 0;
+            }
+        }
+
+        .marquee-animations::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 215px;
+            z-index: 9;
+            background: linear-gradient(270deg, #f1f1f100 0%, #f1f1f1 100%);
+        }
+
+    }
+}

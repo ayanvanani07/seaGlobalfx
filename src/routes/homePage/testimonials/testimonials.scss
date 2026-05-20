@@ -1,0 +1,161 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.testimonials-section {
+    padding: 100px 0;
+    background: #f1f1f1;
+
+    .title-section {
+
+        padding: 0 0 90px;
+
+        h2 {
+            background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+            text-align: center;
+            margin: 0 0 8px;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 105%;
+            -webkit-text-fill-color: #0000;
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include Euclid-medium;
+
+            span {
+                background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                -webkit-text-fill-color: #0000;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        }
+
+        p {
+            margin: 0 auto;
+            max-width: 999px;
+            color: #747474;
+            text-align: center;
+            @include Euclid-reguler;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 105%;
+        }
+
+    }
+
+    .testimonials-card-section {
+        padding: 30px 20px;
+
+        .review-card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 70px;
+
+            .card-grid-items {
+                padding: 28px;
+                border-radius: 24px;
+                background: #fff;
+                overflow: hidden;
+
+                img {
+                    max-width: 100%;
+                }
+
+                .text-grid {
+                    display: grid;
+                    grid-template-columns: 1px 1fr;
+                    gap: 24px;
+
+                    .left-border {
+                        background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .reviewText {
+                        p {
+                            @include Euclid-reguler;
+                            font-size: 17px;
+                            font-weight: 400;
+                            line-height: 26px;
+                            margin: 24px 0 16px;
+                            color: #747474;
+                        }
+
+
+                        .profileIcon {
+                            display: flex;
+                            align-items: center;
+                            gap: 13px;
+
+                            .profileImg {
+
+                                img {
+                                    // max-width: 100%;
+                                    width: 60px;
+                                    height: 60px;
+                                    border-radius: 50%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            .userName {
+                                h4 {
+                                    color: #747474;
+                                    margin: 0 0 4px;
+                                    font-size: 17px;
+                                    font-weight: 600;
+                                    line-height: 105%;
+                                    @include GCarturmDemo-SemiBold;
+                                }
+
+                                span {
+                                    @include Euclid-reguler;
+                                    color: #747474;
+                                    font-size: 17px;
+                                    font-weight: 400;
+                                    line-height: 105%;
+
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            .card-grid-items:nth-child(2) {
+                transform: scale(1.2);
+            }
+
+
+            .card-grid-items::before {
+                content: "";
+                -webkit-mask-composite: xor;
+                pointer-events: none;
+                background: linear-gradient(#0003 0%, #6660 100%);
+                border-radius: 24px;
+                padding: 1px;
+                transition: all .3s ease-in-out;
+                position: absolute;
+                inset: 0;
+                -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                -webkit-mask-position: 0 0, 0 0;
+                -webkit-mask-size: auto, auto;
+                -webkit-mask-repeat: repeat, repeat;
+                -webkit-mask-clip: content-box, border-box;
+                -webkit-mask-origin: content-box, border-box;
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                -webkit-mask-source-type: auto, auto;
+                mask-mode: match-source, match-source;
+            }
+
+            .card-grid-items:hover::before {
+                background: linear-gradient(280deg, #0003 0%, #6660 100%);
+            }
+        }
+
+    }
+}

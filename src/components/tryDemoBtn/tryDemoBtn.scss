@@ -1,0 +1,37 @@
+@use '../../scss/main.scss' as *;
+@use '../../scss/theme/theme.scss' as *;
+@use '../../scss/typography/typography.scss' as *;
+
+
+.tryDemoBtn-section {
+    a {
+        .trydemo-btn {
+            background: #252525;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 48px;
+            align-items: center;
+            gap: 10px;
+            padding: 4px 16px 4px 4px;
+            @include Euclid-semibold;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            transition: all .3s ease-in-out;
+            display: flex;
+
+            img {
+                -webkit-user-drag: none;
+                max-width: 100%;
+            }
+        }
+
+        .trydemo-btn:hover {
+            opacity: .9 !important;
+            transform: scale(1.05) !important;
+            // background: linear-gradient(90deg, #b07a09 10%, #e8bc33 100%);
+        }
+    }
+}

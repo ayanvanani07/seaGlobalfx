@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Euclid-semibold;
+  src: url("./font/Euclid\ Circular\ A\ SemiBold.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Euclid-reguler;
+  src: url("./font/Euclid\ Circular\ A\ Regular.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: Euclid-medium;
+  src: url("./font/Euclid\ Circular\ A\ Medium.ttf");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: GCarturmDemo-Medium;
+  src: url("./font/GCarturmDemo-Medium-BF6902ecb472b48.ttf");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: GCarturmDemo-Regular;
+  src: url("./font/GCarturmDemo-Regular-BF6902ecb4ad10b.ttf");
+}
+
+@font-face {
+  font-family: GCarturmDemo-SemiBold;
+  src: url("./font/GCarturmDemo-SemiBold-BF6902ecb4c3120.ttf");
+}
+
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-One {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container2 {
+  max-width: 1334px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container3 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container4 {
+  max-width: 1129px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
