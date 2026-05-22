@@ -4,12 +4,11 @@
 
 
 .heroBanner-section {
-
     .herobg-img {
         background-image: url('../../../assets/images/hero-bg.png');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 100dvh;
 
 
         .hero-grid {
@@ -87,6 +86,14 @@
                         }
                     }
 
+                    @media (max-width:576px) {
+                        h1 {
+                            font-size: 30px;
+                            line-height: 40px;
+                            margin: 0 0 16px;
+                        }
+                    }
+
                     p {
                         color: #555;
                         max-width: 464px;
@@ -98,10 +105,24 @@
                         line-height: 105%;
                     }
 
+                    @media (max-width:576px) {
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+
+                        }
+                    }
+
                     .btn-flex {
                         display: flex;
                         align-items: center;
                         gap: 16px;
+                    }
+
+                    @media (max-width:576px) {
+                        .btn-flex {
+                            justify-content: center;
+                        }
                     }
 
                 }
@@ -109,7 +130,6 @@
             }
 
             .hero-gif-img {
-
                 height: 100%;
 
                 .hero-gif {
@@ -120,12 +140,53 @@
                     img {
                         width: 100%;
                         display: block;
+                    }
 
+
+                }
+
+                @media (max-width:1024px) {
+                    .hero-gif {
+                        max-width: 60%;
+                    }
+                }
+
+                @media (max-width:576px) {
+                    .hero-gif {
+                        height: 100%;
+                        max-width: 100%;
                     }
                 }
             }
         }
 
-    }
+        @media (max-width:1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                height: auto;
+                padding: 0 20px;
+            }
+        }
 
+    }
+}
+
+@media (max-width:1024px) {
+    .heroBanner-section {
+        .herobg-img {
+            padding: 120px 0 0;
+            height: auto;
+            // width: 100%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .heroBanner-section {
+        .herobg-img {
+            padding: 120px 0 0;
+            height: auto;
+            // width: 100%;
+        }
+    }
 }

@@ -10,7 +10,7 @@ export default function AccountTypes() {
             <div className="container3">
                 <div className="title-section">
                     <h2>
-                        <span>Account</span>
+                        <span>Account </span>
                         Types
                     </h2>
                     <p>Pick an account that matches your trading style and experience level. Our MT5 trading accounts are designed with transparent pricing, competitive spreads, and flexible conditions.</p>

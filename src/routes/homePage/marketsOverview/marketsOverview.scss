@@ -15,6 +15,8 @@
             align-items: center;
 
             .grid-items-mo {
+                display: flex;
+
                 h2 {
                     font-size: 48px;
                     font-weight: 600;
@@ -29,6 +31,21 @@
                         background-clip: text;
 
                     }
+                }
+
+                @media (max-width:576px) {
+                    h2 {
+                        text-align: center;
+                        margin: 0 0 10px;
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+            @media (max-width:576px) {
+                .grid-items-mo {
+                    justify-content: center;
                 }
             }
 
@@ -114,6 +131,19 @@
             }
 
         }
+
+        @media (max-width:1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width:576px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
     }
 
     .doller {
@@ -128,6 +158,13 @@
             position: relative;
         }
     }
+
+    @media (max-width:576px) {
+        .doller {
+            display: none;
+        }
+
+    }
 }
 
 .marketsOverview-section::before {
@@ -140,4 +177,10 @@
     width: 198px;
     height: 252px;
     border-radius: 352px;
+}
+
+@media (max-width:576px) {
+    .marketsOverview-section {
+        padding: 60px 0;
+    }
 }

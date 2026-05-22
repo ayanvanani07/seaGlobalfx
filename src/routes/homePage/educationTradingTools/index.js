@@ -61,7 +61,6 @@ export default function EducationTradingTools() {
                                     </div>
                                 </div>
                                 <div className="card">
-
                                 </div>
                             </div>
                         </div>

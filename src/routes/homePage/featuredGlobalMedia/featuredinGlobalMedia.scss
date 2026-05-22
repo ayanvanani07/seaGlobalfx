@@ -3,7 +3,7 @@
 @use '../../../scss/typography/typography.scss' as *;
 
 .featuredGlobalMedia-section {
-    background: #f1f1f1;
+    background-color: #f1f1f1;
     padding-bottom: 110px;
 
     .flexbox {
@@ -33,12 +33,32 @@
                 }
             }
 
+            @media (max-width:576px) {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
             p {
                 color: #747474;
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 105%;
                 @include Euclid-reguler;
+            }
+
+            @media (max-width:576px) {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            .content {
+                width: 100%;
             }
         }
 
@@ -94,6 +114,13 @@
             }
         }
 
+        @media (max-width:1024px) {
+            .marquee-animations {
+                width: 100%;
+                padding: 40px 0 0;
+            }
+        }
+
         .marquee-animations::before {
             content: '';
             position: absolute;
@@ -105,5 +132,18 @@
             background: linear-gradient(270deg, #f1f1f100 0%, #f1f1f1 100%);
         }
 
+    }
+
+    @media (max-width:1024px) {
+        .flexbox {
+            display: block;
+        }
+
+    }
+}
+
+@media (max-width:576px) {
+    .featuredGlobalMedia-section {
+        padding: 60px 0;
     }
 }

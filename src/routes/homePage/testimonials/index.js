@@ -15,7 +15,9 @@ export default function Testimonials() {
             <div className="testimonials-card-section">
                 <div className="review-card-grid">
                     <div className="card-grid-items">
-                        <img src={Quote} alt="Quote" />
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
 
                         <div className="text-grid">
                             <div className="left-border"></div>
@@ -34,7 +36,9 @@ export default function Testimonials() {
                         </div>
                     </div>
                     <div className="card-grid-items">
-                        <img src={Quote} alt="Quote" />
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
 
                         <div className="text-grid">
                             <div className="left-border"></div>
@@ -53,7 +57,114 @@ export default function Testimonials() {
                         </div>
                     </div>
                     <div className="card-grid-items">
-                        <img src={Quote} alt="Quote" />
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
+
+                        <div className="text-grid">
+                            <div className="left-border"></div>
+                            <div className="reviewText">
+                                <p>It’s really good for crypto trading compared to many platforms. It offers 24/7 support, secure deposits, tight spreads, and allows trading with lower amounts, which makes it very convenient.</p>
+                                <div className="profileIcon">
+                                    <div className="profileImg">
+                                        <img src={ProfileImg} alt="ProfileImg" />
+                                    </div>
+                                    <div className="userName">
+                                        <h4>Ahmed H.</h4>
+                                        <span>Brazil </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-grid-items">
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
+
+                        <div className="text-grid">
+                            <div className="left-border"></div>
+                            <div className="reviewText">
+                                <p>It’s really good for crypto trading compared to many platforms. It offers 24/7 support, secure deposits, tight spreads, and allows trading with lower amounts, which makes it very convenient.</p>
+                                <div className="profileIcon">
+                                    <div className="profileImg">
+                                        <img src={ProfileImg} alt="ProfileImg" />
+                                    </div>
+                                    <div className="userName">
+                                        <h4>Ahmed H.</h4>
+                                        <span>Brazil </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-grid-items">
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
+
+                        <div className="text-grid">
+                            <div className="left-border"></div>
+                            <div className="reviewText">
+                                <p>It’s really good for crypto trading compared to many platforms. It offers 24/7 support, secure deposits, tight spreads, and allows trading with lower amounts, which makes it very convenient.</p>
+                                <div className="profileIcon">
+                                    <div className="profileImg">
+                                        <img src={ProfileImg} alt="ProfileImg" />
+                                    </div>
+                                    <div className="userName">
+                                        <h4>Ahmed H.</h4>
+                                        <span>Brazil </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-grid-items">
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
+
+                        <div className="text-grid">
+                            <div className="left-border"></div>
+                            <div className="reviewText">
+                                <p>It’s really good for crypto trading compared to many platforms. It offers 24/7 support, secure deposits, tight spreads, and allows trading with lower amounts, which makes it very convenient.</p>
+                                <div className="profileIcon">
+                                    <div className="profileImg">
+                                        <img src={ProfileImg} alt="ProfileImg" />
+                                    </div>
+                                    <div className="userName">
+                                        <h4>Ahmed H.</h4>
+                                        <span>Brazil </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-grid-items">
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
+
+                        <div className="text-grid">
+                            <div className="left-border"></div>
+                            <div className="reviewText">
+                                <p>It’s really good for crypto trading compared to many platforms. It offers 24/7 support, secure deposits, tight spreads, and allows trading with lower amounts, which makes it very convenient.</p>
+                                <div className="profileIcon">
+                                    <div className="profileImg">
+                                        <img src={ProfileImg} alt="ProfileImg" />
+                                    </div>
+                                    <div className="userName">
+                                        <h4>Ahmed H.</h4>
+                                        <span>Brazil </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-grid-items">
+                        <div className="quoteIcon">
+                            <img src={Quote} alt="Quote" />
+                        </div>
 
                         <div className="text-grid">
                             <div className="left-border"></div>

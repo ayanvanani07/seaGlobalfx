@@ -8,50 +8,70 @@
 
     .container2 {
         .grid {
-            grid-template-columns: 496px 1fr;
-            align-items: flex-end;
-            gap: 38px;
             display: grid;
+            grid-template-columns: 496px 1fr;
+            // align-items: flex-end;
+            gap: 38px;
 
             .seaglobalImg-align {
-                position: relative;
                 height: 100%;
-                display: flex;
-                align-items: end;
                 max-width: 386px;
                 width: 100%;
+                display: flex;
+                align-items: end;
 
-                .coinImg {
-                    position: absolute;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    top: 12%;
-                    left: 54%;
-                    transform: translate(-50%);
-                    width: 247px;
+                .imgAlignment {
+                    position: relative;
 
-                    img {
-                        max-width: 100%;
-                        animation: upDown 4s ease-in-out infinite;
-                    }
-                }
+                    .imgGrid {
+                        .widthBox {
+                            // max-width: 386px;
+                            width: 386px;
 
-                .seaGlobalImg {
-                    display: flex;
-                    align-items: flex-end;
-                    height: 100%;
+                            .main-Box {
+                                align-items: end;
+                                height: 100%;
+                                display: flex;
+                                position: relative;
 
+                                .seaGlobalImg {
+                                    display: flex;
+                                    align-items: flex-end;
+                                    height: 100%;
 
+                                    img {
+                                        display: block;
+                                    }
+                                }
+                            }
 
-                    img {
-                        display: block;
-                        max-width: 100%;
+                            .coinImg {
+                                justify-content: center;
+                                width: 247px;
+                                display: flex;
+                                position: absolute;
+                                top: -67%;
+                                left: 54%;
+                                transform: translate(-50%);
+
+                                img {
+                                    width: 100%;
+                                    animation: upDown 4s ease-in-out infinite;
+                                }
+                            }
+
+                            @media (max-width:1024px) {
+                                .coinImg {
+                                    z-index: 99;
+                                }
+                            }
+                        }
                     }
                 }
             }
 
             .grid-items {
+
                 h2 {
                     font-size: 48px;
                     font-style: normal;
@@ -62,6 +82,7 @@
                     -webkit-text-fill-color: #0000;
                     background: linear-gradient(93deg, #fff 0%, #f1f1f1 24.34%, #ddd 52.49%, #f1f1f1 71.46%, #fff 99.25%);
                     -webkit-background-clip: text;
+                    @include GCarturmDemo-SemiBold;
 
                     span {
                         background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
@@ -71,6 +92,12 @@
                     }
                 }
 
+                @media (max-width:576px) {
+                    h2 {
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                }
 
                 .mini-cards-grid {
                     display: grid;
@@ -131,8 +158,43 @@
                         mask-mode: match-source, match-source;
                     }
                 }
+
+                @media (max-width:576px) {
+                    .mini-cards-grid {
+                        grid-template-columns: 1fr;
+                        padding: 0 0 220px;
+                    }
+                }
+
+
             }
         }
+
+        @media (max-width:1024px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width:576px) {
+            .grid {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width:576px) {
+            .grid {
+                display: flex;
+                flex-direction: column-reverse;
+
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .whyseaglobal-section {
+        padding: 60px 0;
     }
 }
 

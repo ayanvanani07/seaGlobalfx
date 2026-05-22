@@ -9,11 +9,19 @@ export default function WhySeaGlobal() {
             <div className="container2">
                 <div className="grid">
                     <div className="seaglobalImg-align">
-                        <div className="coinImg">
-                            <img src={CoinImg} alt="CoinImg" />
-                        </div>
-                        <div className="seaGlobalImg">
-                            <img src={SeaGlobalImg} alt="SeaGlobalImg" />
+                        <div className="imgAlignment">
+                            <div className="imgGrid">
+                                <div className="widthBox">
+                                    <div className="main-Box">
+                                        <div className="seaGlobalImg">
+                                            <img src={SeaGlobalImg} alt="SeaGlobalImg" />
+                                        </div>
+                                    </div>
+                                    <div className="coinImg">
+                                        <img src={CoinImg} alt="CoinImg" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="grid-items">

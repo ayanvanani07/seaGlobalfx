@@ -7,7 +7,6 @@
     background: #f1f1f1;
 
     .title-section {
-
         padding: 0 0 90px;
 
         h2 {
@@ -30,6 +29,13 @@
             }
         }
 
+        @media (max-width:576px) {
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
         p {
             margin: 0 auto;
             max-width: 999px;
@@ -41,25 +47,63 @@
             line-height: 105%;
         }
 
+        @media (max-width:576px) {
+            p {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+    }
+
+    @media (max-width:576px) {
+        .title-section {
+            padding: 0 0 30px;
+        }
     }
 
     .testimonials-card-section {
-        padding: 30px 20px;
+        // padding: 30px 20px;
 
         .review-card-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 70px;
+            display: flex;
+            width: 100%;
+            overflow: auto;
+            gap: 40px;
+            scrollbar-width: none;
+            padding-inline: 20px;
+            scroll-behavior: smooth;
 
             .card-grid-items {
                 padding: 28px;
                 border-radius: 24px;
                 background: #fff;
                 overflow: hidden;
+                min-width: 433px;
 
-                img {
-                    max-width: 100%;
+                .quoteIcon {
+                    img {
+                        max-width: 100%;
+                    }
+
+                    @media (max-width:576px) {
+                        img {
+                            max-width: 30px;
+                        }
+                    }
                 }
+
+                @media (max-width:576px) {
+                    .quoteIcon {
+                        width: 30px;
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+
+
 
                 .text-grid {
                     display: grid;
@@ -82,6 +126,14 @@
                             color: #747474;
                         }
 
+                        @media (max-width:576px) {
+                            p {
+                                margin: 10px 0 14px;
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+                        }
+
 
                         .profileIcon {
                             display: flex;
@@ -96,6 +148,13 @@
                                     height: 60px;
                                     border-radius: 50%;
                                     object-fit: cover;
+                                }
+
+                                @media (max-width:576px) {
+                                    img {
+                                        width: 40px;
+                                        height: 40px;
+                                    }
                                 }
                             }
 
@@ -118,17 +177,48 @@
 
                                 }
                             }
+
+                            @media (max-width:576px) {
+                                .userName {
+                                    h4 {
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                    }
+
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        @media (max-width:576px) {
+                            .profileIcon {
+                                display: grid;
+                                grid-template-columns: 40px 1fr;
+                            }
                         }
                     }
 
 
                 }
+
+                @media (max-width:576px) {
+                    .text-grid {
+                        gap: 16px;
+                    }
+                }
             }
 
-            .card-grid-items:nth-child(2) {
-                transform: scale(1.2);
-            }
 
+            @media (max-width:576px) {
+                .card-grid-items {
+                    min-width: 448px;
+
+
+
+                }
+            }
 
             .card-grid-items::before {
                 content: "";
@@ -156,6 +246,19 @@
                 background: linear-gradient(280deg, #0003 0%, #6660 100%);
             }
         }
+
+        @media (max-width:576px) {
+            .review-card-grid {
+                gap: 13px;
+            }
+        }
+
+    }
+}
+
+@media (max-width:576px) {
+    .testimonials-section {
+        padding: 60px 0;
 
     }
 }

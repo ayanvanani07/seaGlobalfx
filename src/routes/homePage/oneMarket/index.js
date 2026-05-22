@@ -17,7 +17,7 @@ export default function OneMarket() {
             <div className="laptopImg">
                 <img src={Thinkpad} alt="thinkpadLaptopImg" />
             </div>
-            <div className="startImg">
+            <div className="starImg">
                 <img src={Star} alt="StartImg"/>
             </div>
             <div className="container2">

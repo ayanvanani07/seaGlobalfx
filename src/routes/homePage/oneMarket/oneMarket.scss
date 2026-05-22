@@ -18,6 +18,22 @@
         }
     }
 
+    @media (max-width:1024px) {
+        .mobileImg {
+            img {
+                max-width: 220px;
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        .mobileImg {
+            img {
+                display: none;
+            }
+        }
+    }
+
     .laptopImg {
         position: absolute;
         top: -12%;
@@ -28,13 +44,46 @@
         }
     }
 
-    .startImg {
+    @media (max-width:1024px) {
+        .laptopImg {
+            img {
+                max-width: 220px;
+            }
+        }
+    }
+
+
+    @media (max-width:576px) {
+        .laptopImg {
+            top: -6%;
+
+            img {
+                width: 140px;
+            }
+        }
+    }
+
+    .starImg {
         position: absolute;
         top: 15%;
         left: 0;
 
         img {
             max-width: 350px;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .starImg {
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        .starImg {
+            top: 5%;
         }
     }
 
@@ -52,6 +101,20 @@
             -webkit-text-fill-color: #0000;
             -webkit-background-clip: text;
             background-clip: text;
+
+            span {
+                background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                -webkit-text-fill-color: #0000;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        }
+
+        @media (max-width:576px) {
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
         }
 
         p {
@@ -66,6 +129,14 @@
             @include Euclid-reguler;
         }
 
+        @media (max-width:576px) {
+            p {
+                margin: 20px 0;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
         .plateform-flex {
             display: flex;
             align-items: center;
@@ -76,6 +147,10 @@
             .mt5,
             .web,
             .mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 span {
                     color: #828282;
                     text-align: center;
@@ -86,12 +161,43 @@
                     font-weight: 500;
                     line-height: 105%;
                     display: block;
+
                 }
+
+                @media (max-width:576px) {
+                    span {
+                        padding: 10px 0 0;
+                        font-size: 14px;
+                    }
+                }
+
+
 
                 img {
                     max-width: 100%;
                 }
+
+                @media (max-width:576px) {
+                    img {
+                        max-width: 40px;
+                        display: block;
+                    }
+                }
             }
         }
+
+        @media (max-width:576px) {
+            .plateform-flex {
+                justify-content: space-between;
+                gap: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .oneMarket-section {
+        padding: 100px 0 60px;
+
     }
 }

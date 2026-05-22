@@ -28,6 +28,16 @@
             }
         }
 
+        @media (max-width:576px) {
+            .openaccount-btn {
+                font-size: 14px;
+
+                img {
+                    max-width: 35px;
+                }
+            }
+        }
+
         .openaccount-btn:hover {
             opacity: .9 !important;
             transform: scale(1.05) !important;

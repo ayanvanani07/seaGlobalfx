@@ -29,6 +29,13 @@
                 }
             }
 
+            @media (max-width:576px) {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
             p {
                 color: #747474;
                 text-align: center;
@@ -38,6 +45,19 @@
                 font-weight: 400;
                 line-height: 105%;
                 @include Euclid-reguler;
+            }
+
+            @media (max-width:576px) {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        @media (max-width :576px) {
+            .section-title {
+                padding: 0 0 30px;
             }
         }
 
@@ -81,6 +101,12 @@
                     font-weight: 600;
                     line-height: 105%;
 
+                }
+
+                @media (max-width:576px) {
+                    h3 {
+                        font-size: 20px;
+                    }
                 }
 
                 p {
@@ -132,10 +158,30 @@
             }
         }
 
+        @media (max-width :576px) {
+            .steps-card-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width :1024px) {
+            .steps-card-grid {
+                grid-template-columns: repeat(2, 1fr);
+                // gap: 20px;
+            }
+        }
+
         .btncenter {
             display: flex;
             justify-content: center;
             margin-top: 32px;
         }
+    }
+}
+
+@media (max-width:576px) {
+    .openYourAccount-section {
+        padding: 60px 0;
     }
 }
