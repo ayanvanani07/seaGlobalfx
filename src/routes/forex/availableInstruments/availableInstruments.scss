@@ -1,0 +1,65 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.availableInstruments-section {
+    background: #f1f1f1;
+    padding: 110px 0;
+
+    .container4 {
+        .text-content {
+            h2 {
+                background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+
+                font-size: 48px;
+                font-weight: 600;
+                margin: 0 0 8px;
+                line-height: 105%;
+                -webkit-text-fill-color: #0000;
+                -webkit-background-clip: text;
+                text-align: center;
+                @include GCarturmDemo-SemiBold;
+
+                span {
+                    background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+
+            @media (max-width:576px) {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
+            p {
+                max-width: 738px;
+                margin: 0 auto;
+                color: #747474;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 17px;
+                @include Euclid-reguler;
+                text-align: center;
+
+            }
+
+            @media (max-width:576px) {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .availableInstruments-section {
+        padding: 60px 0;
+    }
+}

@@ -4,20 +4,20 @@
 
 
 .forex-heroBanner-section {
-
     .herobg-img {
-        background-image: url('../../../assets/images/hero-bg.png');
+        background-image: url('../../../assets/images/common-banner.png');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
-
+        height: 100dvh;
+        background-position: bottom;
 
         .hero-grid {
             display: grid;
-            grid-template-columns: 1fr 560px;
+            grid-template-columns: 1fr 470px;
             gap: 20px;
             height: 100dvh;
             padding-left: max(20px, 50vw - 670px);
+            padding-right: 80px;
 
             .grid-items {
                 height: 100%;
@@ -87,9 +87,17 @@
                         }
                     }
 
+                    @media (max-width:576px) {
+                        h1 {
+                            font-size: 30px;
+                            line-height: 40px;
+                            // margin: 0 0 16px;
+                        }
+                    }
+
                     p {
                         color: #555;
-                        max-width: 464px;
+                        max-width: 714px;
                         margin: 0 0 20px;
                         @include Euclid-reguler;
                         font-size: 16px;
@@ -98,10 +106,24 @@
                         line-height: 105%;
                     }
 
+                    @media (max-width:576px) {
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+
+                        }
+                    }
+
                     .btn-flex {
                         display: flex;
                         align-items: center;
                         gap: 16px;
+                    }
+
+                    @media (max-width:576px) {
+                        .btn-flex {
+                            justify-content: center;
+                        }
                     }
 
                 }
@@ -109,7 +131,6 @@
             }
 
             .hero-gif-img {
-
                 height: 100%;
 
                 .hero-gif {
@@ -120,12 +141,44 @@
                     img {
                         width: 100%;
                         display: block;
+                    }
 
+
+                }
+
+                @media (max-width:1024px) {
+                    .hero-gif {
+                        max-width: 60%;
+                    }
+                }
+
+                @media (max-width:576px) {
+                    .hero-gif {
+                        height: 100%;
+                        max-width: 100%;
                     }
                 }
             }
         }
 
+        @media (max-width:1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                height: auto;
+                padding: 0 20px;
+                gap: 40px;
+            }
+        }
+
     }
 
+
+
+    @media (max-width:1024px) {
+        .herobg-img {
+            height: auto;
+            width: 100%;
+            padding: 120px 0 0;
+        }
+    }
 }

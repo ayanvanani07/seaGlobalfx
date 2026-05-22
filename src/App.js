@@ -12,16 +12,16 @@ function App() {
       <div>
         <WhatsappIcon />
       </div>
-      <div className="homepage">
+      {/* <div className="homepage">
         <Header />
         <HomePage />
         <Footer />
-      </div>
-      {/* <div className="forex">
+      </div> */}
+      <div className="forex">
         <Header />
         <Forex />
-        <Footer />
-      </div> */}
+        {/* <Footer /> */}
+      </div>
     </>
   );
 }

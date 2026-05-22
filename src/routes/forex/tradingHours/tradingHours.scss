@@ -1,0 +1,108 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.tradingHours-section {
+    padding: 100px 0;
+
+    .container3 {
+        .card-highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+
+            .card-grid {
+                border-right: 1px solid #cdcdcd;
+                padding: 20px 20px 30px;
+
+                h3 {
+                    background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 105%;
+                    margin: 0 0 8px;
+                    -webkit-text-fill-color: #0000;
+                    text-align: center;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    @include GCarturmDemo-SemiBold;
+                }
+
+                @media (max-width:576px) {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                h4 {
+                    background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 105%;
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    text-align: center;
+                    @include Euclid-medium;
+                    margin: 0 0 4px;
+                }
+
+                p {
+                    color: #747474;
+                    text-align: center;
+                    @include Euclid-reguler;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 105%;
+
+                }
+
+                @media (max-width:576px) {
+                    p {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+
+                ul {
+                    padding: 0 0 0 20px;
+
+                    li {
+                        color: #747474;
+                        font-weight: 16px;
+                        font-weight: 400;
+                        line-height: 105%;
+                        @include Euclid-reguler;
+                    }
+                }
+            }
+
+            @media (max-width:576px) {
+                .card-grid {
+                    border-bottom: 1px solid #cdcdcd;
+                    border-right: 0;
+                    padding: 24px 0;
+                }
+            }
+
+            .card-grid:last-child {
+                padding: 20px 20px 30px;
+                border-right: none;
+                border-bottom: none;
+
+            }
+        }
+
+        @media (max-width:576px) {
+            .card-highlight-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .tradingHours-section {
+        padding: 60px 0 100px;
+    }
+}

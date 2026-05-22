@@ -1,10 +1,10 @@
 import React from "react";
 import UserIcon from '../../../assets/svgIcons/userIcon.svg'
 import DemoIcon from "../../../assets/svgIcons/demoIcon.svg"
-import "./forexHeroSection.scss";
 import OpenAccountBtn from "../../../components/openAccountBtn";
 import TryDemoBtn from "../../../components/tryDemoBtn";
-import HeroGif from "../../../assets/video/hero-coin.gif"
+import BannerIMg from "../../../assets/images/forex-bannerIMg.png"
+import "./forexHeroSection.scss";
 
 export default function ForexHeroSection() {
     return (
@@ -14,10 +14,10 @@ export default function ForexHeroSection() {
                     <div className="grid-items">
                         <div className="items-content">
                             <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero">
-                                Low spreads • Fast execution • Regulated
+                                Tight spreads • Fast execution • Deep liquidity
                             </button>
                             <h1>Trade the World’s Most Liquid  <span> Financial  </span>  Market</h1>
-                            <p>Experience tight spreads with high-speed execution. Trade in a secure, fully regulated trading environment.</p>
+                            <p>Access global Forex markets through Sea Global’s secure trading infrastructure, offering transparent pricing, fast execution, and reliable liquidity across market conditions.</p>
 
 
                             <div className="btn-flex">
@@ -29,7 +29,7 @@ export default function ForexHeroSection() {
                     </div>
                     <div className="hero-gif-img">
                         <div className="hero-gif">
-                            <img src={HeroGif} alt="HeroGif" />
+                            <img src={BannerIMg} alt="BannerIMg" />
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import Mt4 from "../../../assets/svgIcons/mt4.svg"
 import Mt5 from "../../../assets/svgIcons/mt5.png"
 import Web from "../../../assets/svgIcons/web.png"
@@ -6,11 +6,11 @@ import Mobile from "../../../assets/svgIcons/mobile.png"
 import MobileImg from "../../../assets/svgIcons/mobileImg.png"
 import Thinkpad from "../../../assets/svgIcons/thinkpad.png"
 import Star from "../../../assets/svgIcons/star.png"
-import './oneMarket.scss'
+import './tradeThisMarket.scss'
 
-export default function OneMarket() {
+export default function TradeThisMarket() {
     return (
-        <section className="oneMarket-section">
+        <section className="tradeThisMarket-section">
             <div className="mobileImg">
                 <img src={MobileImg} alt="mobileImg" />
             </div>
@@ -21,8 +21,8 @@ export default function OneMarket() {
                 <img src={Star} alt="StartImg" />
             </div>
             <div className="container2">
-                <h2>One market. <br /> Multiple platforms.<br /> <span>Zero</span>  compromise.</h2>
-                <p>Access the markets through industry-leading trading platforms built for speed, flexibility, and performance. Whether you trade manually or algorithmically, on desktop or mobile, our platforms are designed to support every trading style.</p>
+                <h2><span>Trade </span>this Market on</h2>
+                <p>Access this market using Sea Global’s supported trading platforms, built for speed, stability, and flexibility across desktop, web, and mobile environments.</p>
 
                 <div className="plateform-flex">
                     <div className="mt4">
