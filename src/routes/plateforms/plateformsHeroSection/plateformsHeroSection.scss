@@ -3,7 +3,7 @@
 @use '../../../scss/typography/typography.scss' as *;
 
 
-.accounts-heroSection {
+.plateForms-HeroSection {
     .herobg-img {
         background-image: url('../../../assets/images/common-banner.png');
         background-repeat: no-repeat;
@@ -11,9 +11,10 @@
         height: 100dvh;
         background-position: bottom;
 
+
         .hero-grid {
             display: grid;
-            grid-template-columns: 1fr 520px;
+            grid-template-columns: 1fr 470px;
             gap: 20px;
             height: 100dvh;
             padding-left: max(20px, 50vw - 670px);
@@ -174,7 +175,7 @@
 }
 
 @media (max-width:1024px) {
-    .accounts-heroSection {
+    .plateForms-HeroSection {
         .herobg-img {
             padding: 120px 0 0;
             height: auto;

@@ -1,0 +1,143 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+
+
+.platformHighlights-section {
+    padding: 100px 0;
+    background: #141414;
+
+    .container3 {
+        .section-grid {
+            display: grid;
+            grid-template-columns: 664px 1fr;
+            gap: 70px;
+            align-items: center;
+
+            .grid-items {
+                .ipad-img {
+
+                    img {
+                        width: 100%;
+                        display: block;
+
+                    }
+                }
+
+                h2 {
+                    background: linear-gradient(93deg, #fff 0%, #f1f1f1 24.34%, #ddd 52.49%, #f1f1f1 71.46%, #fff 99.25%);
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 105%;
+                    margin: 0 0 32px;
+                    @include GCarturmDemo-SemiBold;
+                    background-clip: text;
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+
+                    span {
+                        background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                        -webkit-text-fill-color: #0000;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+
+                    }
+                }
+
+                @media (max-width:576px) {
+                    h2 {
+                        text-align: center;
+                        margin: 0 0 30px;
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+
+                .subgrid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 24px;
+                    padding: 0 0 100px;
+
+
+                    .subgrid-box {
+                        background: linear-gradient(#ffffff1a 0%, #fff0 100%);
+                        border-radius: 24px;
+                        padding: 32px 24px 24px;
+                        position: relative;
+
+
+                        h3 {
+                            color: #f5f5f5;
+                            margin: 0 0 12px;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 105%;
+                            @include GCarturmDemo-Regular;
+
+                        }
+
+                        p {
+                            color: #747474;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 105%;
+                            @include Euclid-reguler;
+
+                        }
+                    }
+
+                    .subgrid-box::before {
+                        content: "";
+                        -webkit-mask-composite: xor;
+                        pointer-events: none;
+                        background: linear-gradient(#fff3 0%, #0000 100%);
+                        border-radius: 24px;
+                        padding: 1px;
+                        transition: all .3s ease-in-out;
+                        position: absolute;
+                        inset: 0;
+                        -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                        -webkit-mask-position: 0 0, 0 0;
+                        -webkit-mask-size: auto, auto;
+                        -webkit-mask-repeat: repeat, repeat;
+                        -webkit-mask-clip: content-box, border-box;
+                        -webkit-mask-origin: content-box, border-box;
+                        -webkit-mask-composite: xor;
+                        mask-composite: exclude;
+                        -webkit-mask-source-type: auto, auto;
+                        mask-mode: match-source, match-source;
+                    }
+
+                    .subgrid-box:hover::before {
+                        background: linear-gradient(320deg, #ffffffb3 0%, #0000 100%);
+                    }
+                }
+
+                @media (max-width:576px) {
+                    .subgrid {
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                        padding: 0 0 140px;
+                    }
+                }
+
+            }
+        }
+
+        @media (max-width:1024px) {
+            .section-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+    }
+}
+
+@media (max-width:576px) {
+    .platformHighlights-section {
+        padding: 60px 0;
+    }
+}
