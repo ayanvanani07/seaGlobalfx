@@ -1,10 +1,10 @@
 import React from "react";
-import SystemImg from '../../../assets/svgIcons/system.png'
-import KycImg from "../../../assets/svgIcons/kyc.png"
-import Fund from "../../../assets/svgIcons/fund.png"
-import Trading from "../../../assets/svgIcons/trading.png"
+import SystemImg from '../../assets/svgIcons/system.png'
+import KycImg from "../../assets/svgIcons/kyc.png"
+import Fund from "../../assets/svgIcons/fund.png"
+import Trading from "../../assets/svgIcons/trading.png"
 import './openYourAccount.scss'
-import OpenAccountBtn from "../../../components/openAccountBtn";
+import OpenAccountBtn from "../openAccountBtn";
 
 export default function OpenYourAccount() {
     return (

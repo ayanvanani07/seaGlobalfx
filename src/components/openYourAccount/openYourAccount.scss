@@ -1,6 +1,6 @@
-@use '../../../scss/main.scss' as *;
-@use '../../../scss/theme/theme.scss' as *;
-@use '../../../scss/typography/typography.scss' as *;
+@use '../../scss/main.scss' as *;
+@use '../../scss/theme/theme.scss' as *;
+@use '../../scss/typography/typography.scss' as *;
 
 .openYourAccount-section {
     padding: 110px 0;
@@ -158,6 +158,13 @@
             }
         }
 
+        @media (max-width :1024px) {
+            .steps-card-grid {
+                grid-template-columns: repeat(2, 1fr);
+                // gap: 20px;
+            }
+        }
+
         @media (max-width :576px) {
             .steps-card-grid {
                 grid-template-columns: 1fr;
@@ -165,12 +172,7 @@
             }
         }
 
-        @media (max-width :1024px) {
-            .steps-card-grid {
-                grid-template-columns: repeat(2, 1fr);
-                // gap: 20px;
-            }
-        }
+
 
         .btncenter {
             display: flex;

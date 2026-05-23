@@ -8,8 +8,9 @@ import AccountTypes from "./accountTypes";
 import EducationTradingTools from "./educationTradingTools";
 import Testimonials from "./testimonials";
 import FeaturedGlobalMedia from "./featuredGlobalMedia";
-import OpenYourAccount from "./openYourAccount";
+
 import Faq from "../../components/faq";
+import OpenYourAccount from "../../components/openYourAccount";
 
 export default function HomePage() {
   return (

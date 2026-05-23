@@ -1,0 +1,283 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.blackAccountType-section {
+    padding: 100px 0;
+    background: #141414;
+    position: relative;
+
+    .layer-black {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // z-index: -99;
+        width: 100%;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .container3 {
+        .title-section {
+            padding: 0 0 130px;
+
+            h2 {
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 108%;
+                margin: 0 0 8px;
+                text-align: center;
+                background: #fff;
+                -webkit-text-fill-color: #0000;
+                -webkit-background-clip: text;
+                background-clip: text;
+                @include GCarturmDemo-SemiBold;
+
+                span {
+                    background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+
+            }
+
+
+            @media (max-width:576px) {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
+            p {
+                color: #747474;
+                text-align: center;
+                max-width: 903px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 105%;
+                margin: 0 auto;
+                @include Euclid-reguler;
+
+            }
+
+            @media (max-width:576px) {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        @media (max-width:576px) {
+            .title-section {
+                padding: 0 0 30px;
+            }
+        }
+
+        .card-grids {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            // padding: 0 0 80px;
+
+            .grid-items {
+                height: 100%;
+                background: linear-gradient(#ffffff1a 41.83%, #fff0 100%);
+                border-radius: 24px;
+                height: 100%;
+                position: relative;
+
+
+                .card-topbar {
+                    background: #595959;
+                    border-radius: 24px 24px 0 0;
+                    padding: 24px;
+                    transition: transform .2s ease-in-out;
+
+                    h3 {
+                        color: #fff;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 105%;
+                        @include GCarturmDemo-SemiBold;
+                    }
+                }
+
+                .card-body {
+                    padding: 20px 32px;
+
+                    .text {
+                        border-bottom: 1px solid #747474;
+                        padding: 0 0 24px;
+
+                        p {
+                            color: #747474;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 105%;
+                            @include Euclid-reguler;
+
+                        }
+                    }
+
+                    .all-text {
+                        margin-top: 24px;
+
+                        .text-alignment {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0 0 20px;
+
+                            p {
+                                color: #747474;
+                                font-size: 20px;
+                                font-weight: 400;
+                                line-height: 105%;
+                                @include Euclid-reguler;
+                            }
+
+                            span {
+                                color: #fff;
+                                font-size: 20px;
+                                font-weight: 600;
+                                line-height: 105%;
+                                @include Euclid-semibold;
+
+                            }
+                        }
+                    }
+
+                }
+
+                .card-footer {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        max-width: 155px;
+                    }
+
+                    .CardfooterSVG1 {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+
+                    .CardfooterSVG2 {
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                    }
+
+                    .card-footer-btn {
+                        button {
+                            padding: 4px 16px 4px 4px;
+                            color: #252525;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: none;
+                            border-radius: 48px;
+                            background: #fff;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: normal;
+                            @include Euclid-semibold;
+                            gap: 10px;
+
+                            img {
+                                max-width: 100%;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+
+            .grid-items:nth-child(2) {
+                margin-top: -90px;
+
+                .card-topbar {
+                    background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                }
+
+                .card-footer {
+                    .card-footer-btn {
+                        button {
+                            background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                        }
+                    }
+                }
+            }
+
+            @media (max-width:1024px) {
+                .grid-items:nth-child(2) {
+                    margin-top: 0;
+                }
+            }
+
+            .grid-items::before {
+                content: "";
+                border-radius: 24px;
+                border-radius: inherit;
+                -webkit-mask-composite: xor;
+                pointer-events: none;
+                background: linear-gradient(#0003 0%, #fff0 100%);
+                padding: 1px;
+                transition: all .3s ease-in-out;
+                position: absolute;
+                inset: 0;
+                -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                -webkit-mask-position: 0 0, 0 0;
+                -webkit-mask-size: auto, auto;
+                -webkit-mask-repeat: repeat, repeat;
+                -webkit-mask-clip: content-box, border-box;
+                -webkit-mask-origin: content-box, border-box;
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                -webkit-mask-source-type: auto, auto;
+                mask-mode: match-source, match-source;
+            }
+
+            .grid-items:hover {
+                .card-topbar {
+                    transform: scale(1.035);
+                }
+            }
+
+
+        }
+
+        @media (max-width:1024px) {
+            .card-grids {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 60px 24px;
+            }
+        }
+
+        @media (max-width:576px) {
+            .card-grids {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 0 0 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .blackAccountType-section {
+        padding: 60px 0;
+    }
+}
