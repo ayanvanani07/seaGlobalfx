@@ -1,0 +1,210 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.platTradethisMarket-section {
+    background: #f1f1f1;
+    padding: 150px 0 0;
+    position: relative;
+
+    .mobileImg {
+        z-index: 9;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+
+        img {
+            max-width: 350px;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .mobileImg {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        .mobileImg {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .laptopImg {
+        position: absolute;
+        top: -11%;
+        right: 0;
+
+        img {
+            max-width: 420px;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .laptopImg {
+
+            img {
+                max-width: 240px;
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        .laptopImg {
+            // top: -6%;
+
+            img {
+                width: 240px;
+            }
+        }
+    }
+
+    .starImg {
+        position: absolute;
+        top: 5%;
+        left: 0;
+
+        img {
+            max-width: 350px;
+
+        }
+    }
+
+    @media (max-width:1024px) {
+        .starImg {
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        .starImg {
+            top: 5%;
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+
+    .container2 {
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            // max-width: 423px;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 105%;
+            margin: 0 auto;
+            @include GCarturmDemo-SemiBold;
+            background: var(--Hero-Text, linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%));
+            -webkit-text-fill-color: #0000;
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            span {
+                background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                -webkit-text-fill-color: #0000;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        }
+
+        @media (max-width:576px) {
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        p {
+            color: #828282;
+            text-align: center;
+            max-width: 600px;
+            margin: 16px auto 24px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            @include Euclid-reguler;
+        }
+
+        @media (max-width:576px) {
+            p {
+                margin: 8px auto 16px;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+        .plateform-flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 0 0 100px;
+
+            .mt4,
+            .mt5,
+            .web,
+            .mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                span {
+                    color: #828282;
+                    text-align: center;
+                    padding: 16px 0 0;
+                    @include Euclid-medium;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 105%;
+                    display: block;
+
+                }
+
+                @media (max-width:576px) {
+                    span {
+                        padding: 10px 0 0;
+                        font-size: 14px;
+                    }
+                }
+
+
+
+                img {
+                    max-width: 100%;
+                }
+
+                @media (max-width:576px) {
+                    img {
+                        max-width: 40px;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        @media (max-width:576px) {
+            .plateform-flex {
+                justify-content: space-between;
+                gap: 16px;
+                padding: 0 0 40px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .oneMarket-section {
+        padding: 100px 0 60px;
+    }
+}

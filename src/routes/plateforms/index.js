@@ -5,6 +5,9 @@ import VideoIframe from "./videoIframe";
 import PlatformHighlights from "./platformHighlights";
 import StartTrading from "../forex/startTrading";
 import TradeThisMarket from "../forex/tradethisMarket";
+import PlatTradethisMarket from "./plateTradethisMarket";
+import PlateStartTrading from "./plateStartTrading";
+import Faq from "../../components/faq";
 
 export default function Plateforms() {
     return (
@@ -13,6 +16,9 @@ export default function Plateforms() {
             <MarqueeAnimate />
             <VideoIframe />
             <PlatformHighlights />
+            <PlatTradethisMarket />
+            <PlateStartTrading />
+            <Faq />
         </div>
     )
 }

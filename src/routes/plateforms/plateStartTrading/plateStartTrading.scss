@@ -1,0 +1,119 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+
+.plateStartTrading-section {
+    background: #f1f1f1;
+
+    .container3 {
+        .startTrading-grid {
+            grid-template-columns: 1fr 512px;
+            gap: 20px;
+            display: grid;
+            background: #141414;
+            border-radius: 32px;
+            position: relative;
+
+            .text-content {
+                padding: 120px 0 120px 72px;
+                height: 100%;
+
+                h3 {
+                    @include GCarturmDemo-SemiBold;
+                    color: #fff;
+                    // max-width: 292px;
+                    margin: 0 0 8px;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 105%;
+
+                    span {
+                        background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                        -webkit-text-fill-color: #0000;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                    }
+                }
+
+
+
+                h6 {
+                    @include Euclid-reguler;
+                    color: #747474;
+                    max-width: 548px;
+                    margin: 0 0 16px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 105%;
+                }
+
+                @media (max-width:576px) {
+                    h3 {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+
+                    h6 {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+
+                .btn-flex {
+                    display: flex;
+                    gap: 16px;
+                    align-items: center;
+                }
+            }
+
+            @media (max-width:1024px) {
+                .text-content {
+                    padding: 60px 40px 0;
+                }
+            }
+
+            @media (max-width:576px) {
+                .text-content {
+                    padding: 60px 20px 40px;
+                }
+            }
+
+            .earthImg {
+                img {
+                    width: 100%;
+
+                }
+
+                @media (max-width:1024px) {
+                    img {
+                        height: auto;
+
+                    }
+                }
+
+            }
+        }
+
+        @media (max-width:1024px) {
+            .startTrading-grid {
+                grid-template-columns: 1fr;
+
+            }
+        }
+
+        @media (max-width:576px) {
+            .startTrading-grid {
+                border-radius: 0;
+            }
+        }
+
+
+    }
+
+    @media (max-width:576px) {
+        .container3 {
+            padding-inline: 0;
+        }
+    }
+}
