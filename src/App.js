@@ -3,6 +3,7 @@ import Faq from "./components/faq";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import WhatsappIcon from "./components/whatsappIcon";
+import AboutUs from "./routes/about-us";
 import Accounts from "./routes/accounts";
 import Forex from "./routes/forex";
 import HomePage from "./routes/homePage";
@@ -39,9 +40,15 @@ function App() {
         <Footer />
       </div> */}
 
-      <div className="partners">
+      {/* <div className="partners">
         <Header />
         <Partners />
+        <Footer />
+      </div> */}
+
+      <div className="about-us">
+        <Header />
+        <AboutUs />
         <Footer />
       </div>
     </>
