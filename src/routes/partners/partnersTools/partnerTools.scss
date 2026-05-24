@@ -1,0 +1,163 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+
+.partnerTools-section {
+    background: #141414;
+    position: relative;
+
+    .blackLayer-Img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .container3 {
+        .tools-grid {
+            display: grid;
+            grid-template-columns: 542px 1fr;
+            align-items: center;
+            gap: 70px;
+            height: 100%;
+
+            .img-items {
+                img {
+                    max-width: 100%
+                }
+            }
+
+            .text-items {
+
+
+                h2 {
+                    background: linear-gradient(93deg, #fff 0%, #f1f1f1 24.34%, #ddd 52.49%, #f1f1f1 71.46%, #fff 99.25%);
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    font-size: 48px;
+                    margin: 0 0 32px;
+                    font-weight: 600;
+                    line-height: 105%;
+                    @include GCarturmDemo-SemiBold;
+
+                    span {
+                        background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                        -webkit-text-fill-color: #0000;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                    }
+                }
+
+                @media (max-width:576px) {
+                    h2 {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+
+                .box-grid {
+                    display: grid;
+                    gap: 16px;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .box-items {
+                        background: linear-gradient(#ffffff1a 0%, #fff0 100%);
+                        border-radius: 24px;
+                        display: grid;
+                        grid-template-columns: 24px 1fr;
+                        align-items: center;
+                        padding: 28px 22px;
+                        position: relative;
+                        gap: 10px;
+
+                        img {
+                            max-width: 100%;
+                            display: block;
+                        }
+
+                        p {
+                            color: #f5f5f5;
+                            font-size: 20px;
+                            @include Euclid-reguler;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 105%;
+                        }
+                    }
+
+                    .box-items::before {
+                        content: "";
+                        -webkit-mask-composite: xor;
+                        pointer-events: none;
+                        background: linear-gradient(#fff3 0%, #0000 100%);
+                        border-radius: 24px;
+                        padding: 1px;
+                        transition: all .3s ease-in-out;
+                        position: absolute;
+                        inset: 0;
+                        -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                        -webkit-mask-position: 0 0, 0 0;
+                        -webkit-mask-size: auto, auto;
+                        -webkit-mask-repeat: repeat, repeat;
+                        -webkit-mask-clip: content-box, border-box;
+                        -webkit-mask-origin: content-box, border-box;
+                        -webkit-mask-composite: xor;
+                        mask-composite: exclude;
+                        -webkit-mask-source-type: auto, auto;
+                        mask-mode: match-source, match-source;
+                    }
+
+                    .box-items:hover::before {
+                        background: linear-gradient(320deg, #ffffffb3 0%, #0000 100%);
+                    }
+                }
+
+                @media (max-width:1024px) {
+                    .box-grid {
+                        grid-template-columns: 1fr;
+
+                    }
+                }
+            }
+
+            @media (max-width:1024px) {
+                .text-items {
+                    padding: 30px 0 0;
+                }
+            }
+
+            @media (max-width:576px) {
+                .text-items {
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            .tools-grid {
+                gap: 40px;
+            }
+
+        }
+
+        @media (max-width:576px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+        }
+    }
+
+    @media (max-width:576px) {
+        .container3 {
+            padding: 0;
+        }
+    }
+}

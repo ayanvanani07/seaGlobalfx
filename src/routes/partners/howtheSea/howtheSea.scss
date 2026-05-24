@@ -1,8 +1,8 @@
-@use '../../scss/main.scss' as *;
-@use '../../scss/theme/theme.scss' as *;
-@use '../../scss/typography/typography.scss' as *;
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
 
-.openYourAccount-section {
+.howtheSea-section {
     padding: 110px 0;
 
     .container3 {
@@ -33,6 +33,7 @@
                 h2 {
                     font-size: 30px;
                     line-height: 40px;
+                    margin: 0;
                 }
             }
 
@@ -61,7 +62,7 @@
             }
         }
 
-        .steps-card-grid {
+        .howtheSea-card-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 16px;
@@ -151,7 +152,6 @@
                 mask-composite: exclude;
                 -webkit-mask-source-type: auto, auto;
                 mask-mode: match-source, match-source;
-
             }
 
             .step-items:hover::before {
@@ -160,20 +160,18 @@
         }
 
         @media (max-width :1024px) {
-            .steps-card-grid {
+            .howtheSea-card-grid {
                 grid-template-columns: repeat(2, 1fr);
                 // gap: 20px;
             }
         }
 
         @media (max-width :576px) {
-            .steps-card-grid {
+            .howtheSea-card-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
         }
-
-
 
         .btncenter {
             display: flex;
@@ -184,7 +182,7 @@
 }
 
 @media (max-width:576px) {
-    .openYourAccount-section {
+    .howtheSea-section {
         padding: 60px 0;
     }
 }

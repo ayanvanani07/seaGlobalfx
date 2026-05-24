@@ -6,6 +6,7 @@ import WhatsappIcon from "./components/whatsappIcon";
 import Accounts from "./routes/accounts";
 import Forex from "./routes/forex";
 import HomePage from "./routes/homePage";
+import Partners from "./routes/partners";
 import Plateforms from "./routes/plateforms";
 
 function App() {
@@ -31,10 +32,16 @@ function App() {
         <Accounts />
         <Footer />
       </div> */}
-      
-      <div className="plateforms">
+
+      {/* <div className="plateforms">
         <Header />
         <Plateforms />
+        <Footer />
+      </div> */}
+
+      <div className="partners">
+        <Header />
+        <Partners />
         <Footer />
       </div>
     </>

@@ -49,7 +49,6 @@ p {
   padding: 0;
 }
 
-
 a {
   cursor: pointer;
   text-decoration: none;
@@ -81,4 +80,10 @@ button {
   max-width: 1129px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.container5 {
+  max-width: 1060px;
+  padding: 0 20px;
+  margin: 0 auto;
 }

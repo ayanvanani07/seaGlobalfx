@@ -3,6 +3,7 @@ import CardfooterSVG1 from "../../../assets/svgIcons/card-footerSVG1.svg"
 import CardfooterSVG2 from "../../../assets/svgIcons/card-footerSVG2.svg"
 import BtnArrow from "../../../assets/svgIcons/BtnArrow.svg"
 import './accountTypes.scss'
+import OpenACBlackBtn from "../../../components/openACBlackBtn";
 
 export default function AccountTypes() {
     return (
@@ -51,12 +52,7 @@ export default function AccountTypes() {
                         <div className="card-footer">
                             <img src={CardfooterSVG1} alt="CardfooterSVG1" className="CardfooterSVG1" />
                             <img src={CardfooterSVG2} alt="CardfooterSVG2" className="CardfooterSVG2" />
-                            <div className="card-footer-btn">
-                                <button aria-label="open account">
-                                    <img src={BtnArrow} alt="BtnArrow" />
-                                    <span>Open Account</span>
-                                </button>
-                            </div>
+                            <OpenACBlackBtn />
 
                         </div>
                     </div>
@@ -137,13 +133,8 @@ export default function AccountTypes() {
                         </div>
                         <div className="card-footer">
                             <img src={CardfooterSVG1} alt="CardfooterSVG1" className="CardfooterSVG1" />
-                            <div className="card-footer-btn">
-                                <button aria-label="open account">
-                                    <img src={BtnArrow} alt="BtnArrow" />
-                                    <span>Open Account</span>
-                                </button>
-                            </div>
                             <img src={CardfooterSVG2} alt="CardfooterSVG2" className="CardfooterSVG2" />
+                            <OpenACBlackBtn />
                         </div>
                     </div>
                 </div>

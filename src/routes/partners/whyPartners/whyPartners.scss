@@ -1,0 +1,133 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+
+.whyPartners-section {
+    background: #141414;
+    padding: 100px 0;
+    position: relative;
+
+    .blackLayer-Img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .container3 {
+        .section-title {
+            padding: 0 0 32px;
+
+            h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 48px;
+
+                font-weight: 600;
+                line-height: 105%;
+                @include GCarturmDemo-SemiBold;
+
+                span {
+                    background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+
+            @media (max-width:576px) {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        .grid-items {
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            position: relative;
+            background: linear-gradient(#ffffff1a 0%, #fff0 100%);
+
+            .card-Img {
+                padding: 0 0 18px;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    display: block;
+
+                }
+            }
+
+            p {
+                color: #fff;
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 105%;
+                @include Euclid-medium;
+            }
+        }
+
+        .grid-items::before {
+            content: "";
+            -webkit-mask-composite: xor;
+            pointer-events: none;
+            background: linear-gradient(#fff3 0%, #0000 100%);
+            border-radius: 24px;
+            padding: 1px;
+            transition: all .3s ease-in-out;
+            position: absolute;
+            inset: 0;
+            -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+            -webkit-mask-position: 0 0, 0 0;
+            -webkit-mask-size: auto, auto;
+            -webkit-mask-repeat: repeat, repeat;
+            -webkit-mask-clip: content-box, border-box;
+            -webkit-mask-origin: content-box, border-box;
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            -webkit-mask-source-type: auto, auto;
+            mask-mode: match-source, match-source;
+        }
+
+        .grid-items:hover::before {
+            background: linear-gradient(320deg, #ffffffb3 0%, #0000 100%);
+        }
+    }
+
+    @media (max-width:1024px) {
+        .partners-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width:576px) {
+        .partners-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+}
+
+
+@media (max-width:576px) {
+    .whyPartners-section {
+        padding: 60px 0;
+    }
+}
