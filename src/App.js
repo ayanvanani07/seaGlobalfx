@@ -5,6 +5,7 @@ import Header from "./components/header";
 import WhatsappIcon from "./components/whatsappIcon";
 import AboutUs from "./routes/about-us";
 import Accounts from "./routes/accounts";
+import Blogs from "./routes/blogs";
 import Forex from "./routes/forex";
 import HomePage from "./routes/homePage";
 import Partners from "./routes/partners";
@@ -46,11 +47,18 @@ function App() {
         <Footer />
       </div> */}
 
-      <div className="about-us">
+      {/* <div className="about-us">
         <Header />
         <AboutUs />
         <Footer />
+      </div> */}
+
+      <div className="blogs">
+        <Header />
+        <Blogs />
+        <Footer />
       </div>
+
     </>
   );
 }

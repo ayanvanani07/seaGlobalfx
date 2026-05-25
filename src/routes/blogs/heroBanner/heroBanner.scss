@@ -1,0 +1,198 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.heroBannerBlog-section {
+    padding: 120px 0 48px;
+
+    .container3 {
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+
+            .grid-img-items {
+                .img-items {
+                    width: 100%;
+                    height: 500px;
+                    position: relative;
+
+                    img {
+                        object-fit: cover;
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .layer {
+                        background: linear-gradient(#0000 0%, #000 100%);
+                        border-radius: 0 0 20px 20px;
+                        width: 100%;
+                        height: 213px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    .img-content {
+                        z-index: 9;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        padding: 24px;
+
+                        h3 {
+                            color: #d9d9d9;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            margin: 0 0 13px;
+                            @include Euclid-medium;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 105%;
+                            display: -webkit-box;
+                            overflow: hidden;
+                        }
+
+                        .date-time {
+                            display: flex;
+                            gap: 16px;
+                            align-items: center;
+
+                            span {
+                                color: #f5f5f5;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 105%;
+                                display: block;
+                                @include Euclid-reguler;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width:576px) {
+                    .img-items {
+                        height: 238px;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+
+
+            }
+
+            .subgrid-img {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+
+                .subgrid:nth-child(1) {
+                    grid-column: span 2;
+                }
+
+
+                @media (max-width:576px) {
+                    .subgrid:nth-child(1) {
+                        grid-column: auto;
+                    }
+                }
+
+                .subgrid {
+                    height: 238px;
+                    position: relative;
+
+                    img {
+                        object-fit: cover;
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .layer {
+                        background: linear-gradient(#0000 0%, #000 100%);
+                        border-radius: 0 0 20px 20px;
+                        width: 100%;
+                        height: 213px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    .img-content {
+                        z-index: 9;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        padding: 24px;
+
+                        h3 {
+                            color: #d9d9d9;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            margin: 0 0 13px;
+                            @include Euclid-medium;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 105%;
+                            display: -webkit-box;
+                            overflow: hidden;
+                        }
+
+                        .date-time {
+                            display: flex;
+                            gap: 16px;
+                            align-items: center;
+
+                            span {
+                                color: #f5f5f5;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 105%;
+                                display: block;
+                                @include Euclid-reguler;
+                            }
+                        }
+                    }
+
+                    @media (max-width:576px) {
+                        .img-content {
+                            padding: 16px;
+                        }
+                    }
+                }
+
+            }
+
+            @media (max-width:576px) {
+                .subgrid-img {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width:576px) {
+            .blog-grid {
+                gap: 20px;
+            }
+        }
+
+    }
+
+}
