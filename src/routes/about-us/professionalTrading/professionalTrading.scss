@@ -1,0 +1,188 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+
+.professionalTrading-section {
+    padding: 110px 0;
+    border-bottom: 1px solid #99999954;
+    background-color: #f1f1f1;
+
+    .container3 {
+        .pt-grid {
+            display: grid;
+            grid-template-columns: 1fr 700px;
+            align-items: center;
+            gap: 80px;
+
+
+            .img-grid-items {
+                width: 460px;
+
+                img {
+                    display: block;
+                    animation: updown 5s ease-in-out infinite;
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:576px) {
+                .img-grid-items {
+                    width: 470px;
+
+                    img {
+                        display: block;
+                        animation: updown 5s ease-in-out infinite;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .text-grid-items {
+
+                .text {
+                    padding: 0 0 32px;
+
+                    h2 {
+                        background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+
+                        font-size: 48px;
+                        font-weight: 600;
+                        line-height: 105%;
+                        @include GCarturmDemo-SemiBold;
+                        margin: 0 0 8px;
+                        -webkit-text-fill-color: #0000;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+
+                        span {
+                            background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                            -webkit-text-fill-color: #0000;
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                        }
+                    }
+
+                    @media (max-width:576px) {
+                        h2 {
+                            font-size: 30px;
+                            line-height: 40px;
+                            margin: 0;
+                        }
+                    }
+
+                    p {
+                        color: #747474;
+                        @include Euclid-reguler;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 105%;
+                    }
+
+                    @media (max-width:576px) {
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+
+                .box-subgrid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 0 24px;
+                    max-width: 500px;
+
+                    .subgrid-items {
+                        background: linear-gradient(#0000001a 0%, #0000 100%);
+                        border-radius: 24px;
+                        padding: 28px 22px;
+                        transition: .5s ease-in-out;
+
+                        h3 {
+                            @include Euclid-reguler;
+                            color: #252525;
+                            max-width: 190px;
+                            margin: 0 0 12px;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 105%;
+                        }
+
+                        @media (max-width:576px) {
+                            h3 {
+                                max-width: 100%;
+                            }
+                        }
+
+                        p {
+                            color: #747474;
+                            font-size: 16px;
+                            font-weight: 300;
+                            @include Euclid-reguler;
+                            line-height: 105%;
+                        }
+                    }
+
+                    .subgrid-items:hover {
+                        transform: translateY(-8px) scale(1.03) rotateX(6deg) rotateY(-6deg);
+                    }
+                }
+
+                @media (max-width:576px) {
+                    .box-subgrid {
+                        grid-template-columns: 1fr;
+                    }
+                }
+
+
+
+            }
+
+
+        }
+
+        @media (max-width:1024px) {
+            .pt-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width:576px) {
+
+            .pt-grid {
+
+                .img-grid-items {
+                    order: 2;
+                }
+
+                .text-grid-items {
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .professionalTrading-section {
+        padding: 60px 0;
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-13.90px);
+
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

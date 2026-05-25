@@ -1,0 +1,201 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.howtheSea-section {
+    padding: 110px 0;
+
+    .container3 {
+        .section-title {
+            padding: 0 0 32px;
+
+            h2 {
+                background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+                text-align: center;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 105%;
+                @include GCarturmDemo-SemiBold;
+                margin: 0 0 8px;
+                -webkit-text-fill-color: #0000;
+                -webkit-background-clip: text;
+                background-clip: text;
+
+                span {
+                    background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+
+            @media (max-width:576px) {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin: 0;
+                }
+            }
+
+            p {
+                color: #747474;
+                text-align: center;
+                max-width: 885px;
+                margin: 0 auto;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 105%;
+                @include Euclid-reguler;
+            }
+
+            @media (max-width:576px) {
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        @media (max-width :576px) {
+            .section-title {
+                padding: 0 0 30px;
+            }
+        }
+
+        .howtheSea-card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+
+            .step-items {
+                border-radius: 24px;
+                padding: 24px 24px 10px;
+                background: #f1f1f1;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                transition: .5s ease-in-out;
+
+                div {
+                    .counter {
+                        background: linear-gradient(90deg, #e8bc33 10%, #b07a09 100%);
+                        border-radius: 50%;
+                        color: #fff;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 45px;
+                        height: 45px;
+                        font-size: 24px;
+                        line-height: 105%;
+                        font-weight: 600;
+                        margin: 0 0 12px;
+
+                        span {
+                            @include Euclid-semibold;
+                        }
+                    }
+
+                    h3 {
+                        background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+                        -webkit-text-fill-color: #0000;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        @include Euclid-medium;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 105%;
+                        max-width: 240px;
+
+                    }
+
+                    @media (max-width:576px) {
+                        h3 {
+                            font-size: 20px;
+
+                        }
+                    }
+
+                    p {
+                        color: #747474;
+                        margin: 8px 0 18px;
+                        @include Euclid-reguler;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 105%;
+                    }
+
+                    .step-img {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .step-items::before {
+                content: "";
+                border-radius: 24px;
+                border-radius: inherit;
+                -webkit-mask-composite: xor;
+                pointer-events: none;
+                background: linear-gradient(#0003 0%, #fff0 100%);
+                padding: 1px;
+                transition: all .3s ease-in-out;
+                position: absolute;
+                inset: 0;
+                -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                -webkit-mask-position: 0 0, 0 0;
+                -webkit-mask-size: auto, auto;
+                -webkit-mask-repeat: repeat, repeat;
+                -webkit-mask-clip: content-box, border-box;
+                -webkit-mask-origin: content-box, border-box;
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                -webkit-mask-source-type: auto, auto;
+                mask-mode: match-source, match-source;
+            }
+
+            .step-items:hover::before {
+                background: linear-gradient(240deg, #00000080 0%, #fff0 100%);
+            }
+
+            .step-items:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        @media (max-width :1024px) {
+            .howtheSea-card-grid {
+                grid-template-columns: repeat(2, 1fr);
+                // gap: 20px;
+            }
+        }
+
+        @media (max-width :576px) {
+            .howtheSea-card-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        .btncenter {
+            display: flex;
+            justify-content: center;
+            margin-top: 32px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .howtheSea-section {
+        padding: 60px 0;
+    }
+}

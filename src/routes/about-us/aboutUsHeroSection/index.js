@@ -8,7 +8,7 @@ import TryDemoBtn from "../../../components/tryDemoBtn";
 export default function AboutusHeroSection() {
     return (
         <section className="aboutUs-HeroSection">
-            <div className="herobg-img">
+            <div className="herobg">
                 <div className="hero-grid">
                     <div className="grid-items">
                         <div className="items-content">
@@ -23,7 +23,6 @@ export default function AboutusHeroSection() {
                                 <TryDemoBtn />
                             </div>
                         </div>
-
                     </div>
                     <div className="hero-gif-img">
                         <div className="hero-gif">

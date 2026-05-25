@@ -4,7 +4,7 @@
 
 
 .aboutUs-HeroSection {
-    .herobg-img {
+    .herobg {
         background-image: url('../../../assets/images/common-banner.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,8 +17,8 @@
             grid-template-columns: 1fr 470px;
             gap: 20px;
             height: 100dvh;
-            padding-left: max(20px, 50vw - 670px);
             padding-right: 80px;
+            padding-left: max(20px, 50vw - 670px);
 
             .grid-items {
                 height: 100%;
@@ -166,7 +166,8 @@
             .hero-grid {
                 grid-template-columns: 1fr;
                 height: auto;
-                padding: 0 20px;
+                padding-left: 20px;
+                padding-right: 20px;
                 gap: 40px;
             }
         }
@@ -175,8 +176,8 @@
 }
 
 @media (max-width:1024px) {
-    .partners-HeroSection {
-        .herobg-img {
+    .aboutUs-HeroSection {
+        .herobg {
             padding: 120px 0 0;
             height: auto;
             // width: 100%;
@@ -185,7 +186,7 @@
 }
 
 @media (max-width:576px) {
-    .accounts-heroSection {
+    .aboutUs-HeroSection {
         .herobg-img {
             padding: 120px 0 0;
             height: auto;
