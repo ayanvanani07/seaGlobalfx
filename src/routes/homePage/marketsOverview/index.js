@@ -6,12 +6,12 @@ import './marketsOverview.scss'
 export default function MarketsOverview() {
     return (
         <section className="marketsOverview-section">
-            <div className="container3">
+            <div className="container-lg">
                 <div className="grid">
                     <div className="grid-items-mo">
-                        <h2><span>Markets</span> Overview</h2>
+                        <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="50"><span>Markets</span> Overview</h2>
                     </div>
-                    <div className="grid-items-mo-card">
+                    <div className="grid-items-mo-card animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="card-body">
                             <div className="card-img">
                                 <img src={Card3dImg} alt="Card3dImg" />
@@ -22,7 +22,7 @@ export default function MarketsOverview() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items-mo-card">
+                    <div className="grid-items-mo-card animate__animated animate__fadeInUp wow" data-wow-offset="150">
                         <div className="card-body">
                             <div className="card-img">
                                 <img src={Card3dImg} alt="Card3dImg" />
@@ -33,7 +33,7 @@ export default function MarketsOverview() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items-mo-card">
+                    <div className="grid-items-mo-card animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="card-body">
                             <div className="card-img">
                                 <img src={Card3dImg} alt="Card3dImg" />
@@ -44,7 +44,7 @@ export default function MarketsOverview() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items-mo-card">
+                    <div className="grid-items-mo-card animate__animated animate__fadeInUp wow" data-wow-offset="50">
                         <div className="card-body">
                             <div className="card-img">
                                 <img src={Card3dImg} alt="Card3dImg" />
@@ -55,7 +55,7 @@ export default function MarketsOverview() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items-mo-card">
+                    <div className="grid-items-mo-card animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="card-body">
                             <div className="card-img">
                                 <img src={Card3dImg} alt="Card3dImg" />
@@ -66,7 +66,7 @@ export default function MarketsOverview() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items-mo-card">
+                    <div className="grid-items-mo-card animate__animated animate__fadeInUp wow" data-wow-offset="150">
                         <div className="card-body">
                             <div className="card-img">
                                 <img src={Card3dImg} alt="Card3dImg" />

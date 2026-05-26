@@ -18,7 +18,7 @@
         }
     }
 
-    .container3 {
+    .container-lg {
         .tools-grid {
             display: grid;
             grid-template-columns: 542px 1fr;
@@ -156,7 +156,7 @@
     }
 
     @media (max-width:576px) {
-        .container3 {
+        .container-lg {
             padding: 0;
         }
     }

@@ -6,7 +6,7 @@
 .plateStartTrading-section {
     background: #f1f1f1;
 
-    .container3 {
+    .container-lg {
         .startTrading-grid {
             grid-template-columns: 1fr 512px;
             gap: 20px;
@@ -112,7 +112,7 @@
     }
 
     @media (max-width:576px) {
-        .container3 {
+        .container-lg {
             padding-inline: 0;
         }
     }

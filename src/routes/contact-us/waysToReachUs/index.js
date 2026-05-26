@@ -8,7 +8,7 @@ import './waysToReachUs.scss'
 export default function WaysToReachUs() {
     return (
         <section className="waysToReachUs-section">
-            <div className="container2">
+            <div className="container-xl">
                 <div className="blackLayer-Img">
                     <img src={BlackLayerImg} alt="BlackLayerImg" />
                 </div>

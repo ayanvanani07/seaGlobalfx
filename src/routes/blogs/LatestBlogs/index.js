@@ -6,7 +6,7 @@ import './latestBlogs.scss'
 export default function LatestBlogs() {
     return (
         <section className="latestBlogs-section">
-            <div className="container3">
+            <div className="container-lg">
                 <div className="section-title">
                     <div className="title">
                         <h2>Latest <span>Blogs</span></h2>
@@ -28,8 +28,8 @@ export default function LatestBlogs() {
                     <div className="line"></div>
                 </div>
 
-                <div className="main-blog-grid">
-                    <div className="blog-grid-items">
+                <div className="main-blog-grid" >
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="50">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -41,7 +41,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -53,7 +53,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="150">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -65,7 +65,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -77,7 +77,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="50">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -89,7 +89,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -101,7 +101,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="150">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -113,7 +113,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -125,7 +125,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="50">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -137,7 +137,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -149,7 +149,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="150">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -161,7 +161,7 @@ export default function LatestBlogs() {
                             </div>
                         </div>
                     </div>
-                    <div className="blog-grid-items">
+                    <div className="blog-grid-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="blog-img">
                             <img src={LatestblogImg} alt="LatestblogImg" />
                         </div>
@@ -175,7 +175,7 @@ export default function LatestBlogs() {
                     </div>
                 </div>
 
-                <div className="pagination">
+                <div className="pagination animate__animated animate__fadeInUp wow" data-wow-offset="100">
                     <div className="page-action">
                         <div className="page-direction">Prev</div>
                         <div className="counter">

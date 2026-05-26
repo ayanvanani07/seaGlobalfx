@@ -12,16 +12,16 @@ export default function BlackAccountType() {
             <div className="layer-black">
                 <img src={LayerBlackBG} alt="LayerBlackBG" />
             </div>
-            <div className="container3">
+            <div className="container-lg">
                 <div className="title-section">
-                    <h2>
+                    <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <span>Account </span>
                         Types
                     </h2>
-                    <p>Pick an account that matches your trading style and experience level. Our MT5 trading accounts are designed with transparent pricing, competitive spreads, and flexible conditions.</p>
+                    <p >Pick an account that matches your trading style and experience level. Our MT5 trading accounts are designed with transparent pricing, competitive spreads, and flexible conditions.</p>
                 </div>
-                <div className="card-grids">
-                    <div className="grid-items">
+                <div className="card-grids" >
+                    <div className="grid-items animate__animated animate__fadeInUp" wow data-wow-offset="100">
                         <div className="card-topbar">
                             <h3>Pro</h3>
                         </div>
@@ -65,7 +65,7 @@ export default function BlackAccountType() {
 
                         </div>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items  animate__animated animate__fadeInUp" wow data-wow-offset="200">
                         <div className="card-topbar">
                             <h3>Standard</h3>
                         </div>
@@ -108,7 +108,7 @@ export default function BlackAccountType() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items  animate__animated animate__fadeInUp" wow data-wow-offset="100">
                         <div className="card-topbar">
                             <h3>Plus</h3>
                         </div>

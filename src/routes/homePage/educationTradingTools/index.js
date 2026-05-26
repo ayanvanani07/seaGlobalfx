@@ -6,16 +6,16 @@ import './educationTradingTools.scss'
 export default function EducationTradingTools() {
     return (
         <section className="educationTradingTools-section-card">
-            <div className="container3">
+            <div className="container-lg">
                 <div className="card-align">
                     <div className="section-card-grid">
                         <div className="card-grid-items">
                             <div className="right-content">
-                                <h2>
+                                <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="50">
                                     <span>Education &</span>
                                     Trading Tools
                                 </h2>
-                                <p>Enhance your trading knowledge and decision-making with our education hub and professional trading tools, designed to support traders at every stage of their journey.</p>
+                                <p className="animate__animated animate__fadeInUp wow" data-wow-offset="50">Enhance your trading knowledge and decision-making with our education hub and professional trading tools, designed to support traders at every stage of their journey.</p>
                             </div>
                         </div>
                         <div className="mini-card-grid">

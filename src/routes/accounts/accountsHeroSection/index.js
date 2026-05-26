@@ -16,8 +16,8 @@ export default function AccountsHeroSection() {
                             <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero">
                                 Transparent pricing • Flexible conditions
                             </button>
-                            <h1>Find the Best Account for Your <span> Goals </span></h1>
-                            <p>Choose an account that matches your experience level, trading strategy, and cost preferences. Sea Global offers clearly defined account types with transparent pricing and flexible trading conditions, so you can select what’s right for you with confidence.</p>
+                            <h1 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Find the Best Account for Your <span> Goals </span></h1>
+                            <p className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Choose an account that matches your experience level, trading strategy, and cost preferences. Sea Global offers clearly defined account types with transparent pricing and flexible trading conditions, so you can select what’s right for you with confidence.</p>
 
 
                             <div className="btn-flex">
@@ -27,8 +27,8 @@ export default function AccountsHeroSection() {
                         </div>
 
                     </div>
-                    <div className="hero-gif-img">
-                        <div className="hero-gif">
+                    <div className="hero-gif-img" >
+                        <div className="hero-gif animate__animated animate__zoomIn wow" data-wow-offset="100">
                             <img src={EtfsBanner} alt="etfs - banner" />
                         </div>
                     </div>

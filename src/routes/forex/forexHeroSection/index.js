@@ -16,11 +16,10 @@ export default function ForexHeroSection() {
                             <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero">
                                 Tight spreads • Fast execution • Deep liquidity
                             </button>
-                            <h1>Trade the World’s Most Liquid  <span> Financial  </span>  Market</h1>
-                            <p>Access global Forex markets through Sea Global’s secure trading infrastructure, offering transparent pricing, fast execution, and reliable liquidity across market conditions.</p>
+                            <h1 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Trade the World’s Most Liquid  <span> Financial  </span>  Market</h1>
+                            <p className="animate__animated animate__fadeInUp wow" data-wow-offset="150">Access global Forex markets through Sea Global’s secure trading infrastructure, offering transparent pricing, fast execution, and reliable liquidity across market conditions.</p>
 
-
-                            <div className="btn-flex">
+                            <div className="btn-flex animate__animated animate__fadeInUp wow" data-wow-offset="150">
                                 <OpenAccountBtn />
                                 <TryDemoBtn />
                             </div>
@@ -28,7 +27,7 @@ export default function ForexHeroSection() {
 
                     </div>
                     <div className="hero-gif-img">
-                        <div className="hero-gif">
+                        <div className="hero-gif animate__animated animate__zoomIn" data-wow-offset="150" >
                             <img src={BannerIMg} alt="BannerIMg" />
                         </div>
                     </div>

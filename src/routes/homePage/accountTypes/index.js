@@ -8,8 +8,8 @@ import OpenACBlackBtn from "../../../components/openACBlackBtn";
 export default function AccountTypes() {
     return (
         <section className="accountTypes-section">
-            <div className="container3">
-                <div className="title-section">
+            <div className="container-lg">
+                <div className="title-section animate__animated animate__fadeInUp wow" data-wow-offset="50">
                     <h2>
                         <span>Account </span>
                         Types
@@ -17,7 +17,7 @@ export default function AccountTypes() {
                     <p>Pick an account that matches your trading style and experience level. Our MT5 trading accounts are designed with transparent pricing, competitive spreads, and flexible conditions.</p>
                 </div>
                 <div className="card-grids">
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="card-topbar">
                             <h3>Pro</h3>
                         </div>
@@ -56,7 +56,7 @@ export default function AccountTypes() {
 
                         </div>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="150">
                         <div className="card-topbar">
                             <h3>Standard</h3>
                         </div>
@@ -99,7 +99,7 @@ export default function AccountTypes() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="card-topbar">
                             <h3>Plus</h3>
                         </div>

@@ -7,11 +7,11 @@ import OpenAccountBtn from "../../../components/openAccountBtn";
 export default function ReadytoBecome() {
     return (
         <section className="readytoBecome-section">
-            <div className="container3">
+            <div className="container-lg">
                 <div className="readytoBecome-grid">
                     <div className="text-content">
-                        <h3>Ready to Become a <span>Sea Global FX</span>Partner?</h3>
-                        <h6>Join our growing global partner network and start building a sustainable forex partnership today.</h6>
+                        <h3 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Ready to Become a <span>Sea Global FX</span>Partner?</h3>
+                        <h6 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Join our growing global partner network and start building a sustainable forex partnership today.</h6>
                         <div className="btn-flex">
                             <OpenAccountBtn />
                             <TryDemoBtn />

@@ -9,18 +9,18 @@ import './OurForexPartners.scss'
 export default function OurForexPartners() {
     return (
         <section className="ourForexPartners-section">
-            <div className="leftLayer">
+            <div className="leftLayer animate__animated animate__fadeInUp wow" data-wow-offset="50">
                 <img src={LeftLayer} alt="leftlayer" />
             </div>
-            <div className="rightlayer">
+            <div className="rightlayer animate__animated animate__fadeInUp wow" data-wow-offset="50">
                 <img src={RightLayer} alt="rightLayer" />
             </div>
-            <div className="container5">
+            <div className="container-md">
                 <div className="section-title">
-                    <h2>Our Forex Partner <span>Program</span></h2>
+                    <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Our Forex Partner <span>Program</span></h2>
                 </div>
 
-                <div className="introducingbroker-card">
+                <div className="introducingbroker-card animate__animated animate__fadeInUp wow" data-wow-offset="150">
                     <div className="card-title">
                         <h3>Introducing Broker (IB) Program</h3>
                     </div>

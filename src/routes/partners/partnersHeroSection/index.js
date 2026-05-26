@@ -14,8 +14,8 @@ export default function PartnersHeroSection() {
                             <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero">
                                 Seaglobal FX IB Partners Program
                             </button>
-                            <h1>Grow Your Forex <br /><span> Business  </span>With Us</h1>
-                            <p>Build long-term revenue by partnering with Seaglobal FX, a global forex broker focused on transparency, advanced trading technology, and partner success.</p>
+                            <h1 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Grow Your Forex <br /><span> Business  </span>With Us</h1>
+                            <p className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Build long-term revenue by partnering with Seaglobal FX, a global forex broker focused on transparency, advanced trading technology, and partner success.</p>
 
                             <div className="btn-flex">
                                 <BecomePartnersbtn />
@@ -24,7 +24,7 @@ export default function PartnersHeroSection() {
 
                     </div>
                     <div className="hero-gif-img">
-                        <div className="hero-gif">
+                        <div className="hero-gif animate__animated animate__zoomIn wow" data-wow-offset="100">
                             <img src={Partners} alt="Partners" />
                         </div>
                     </div>

@@ -9,33 +9,33 @@ export default function WhyPartners() {
             <div className="blackLayer-Img">
                 <img src={BlackLayerImg} alt="BlackLayerImg" />
             </div>
-            <div className="container3">
+            <div className="container-lg">
                 <div className="section-title">
-                    <h2>Why Partner With <span> Sea Global FX? </span></h2>
+                    <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Why Partner With <span> Sea Global FX? </span></h2>
                 </div>
                 <div className="partners-grid">
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="card-Img">
                             <img src={Competitive} alt="alt
                             Competitive" />
                         </div>
                         <p>Competitive IB Commissions</p>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="card-Img">
                             <img src={Competitive} alt="alt
                             Competitive" />
                         </div>
                         <p>Transparent Reporting</p>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="250">
                         <div className="card-Img">
                             <img src={Competitive} alt="alt
                             Competitive" />
                         </div>
                         <p>Global Client Reach</p>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="card-Img">
                             <img src={Competitive} alt="alt
                             Competitive" />

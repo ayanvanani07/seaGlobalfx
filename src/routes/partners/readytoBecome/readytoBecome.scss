@@ -7,7 +7,7 @@
     background: #f1f1f1;
     padding: 100px 0 0;
 
-    .container3 {
+    .container-lg {
         .readytoBecome-grid {
             display: grid;
             grid-template-columns: 1fr 512px;
@@ -106,7 +106,7 @@
     }
 
     @media (max-width:576px) {
-        .container3 {
+        .container-lg {
             padding-inline: 0;
         }
     }

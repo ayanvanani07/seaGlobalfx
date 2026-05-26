@@ -9,12 +9,12 @@ import OpenAccountBtn from "../../../components/openAccountBtn";
 export default function HowtheSea() {
     return (
         <section className="howtheSea-section">
-            <div className="container3">
+            <div className="container-lg">
                 <div className="section-title">
-                    <h2>How the Sea Global FX IB Program <span>Works</span></h2>
+                    <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">How the Sea Global FX IB Program <span>Works</span></h2>
                 </div>
                 <div className="howtheSea-card-grid">
-                    <div className="step-items">
+                    <div className="step-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="counter"><span>1</span></div>
                         <h3>Register as a Partner</h3>
                         <p>Complete the online IB registration form.</p>
@@ -22,7 +22,7 @@ export default function HowtheSea() {
                             <img src={Register} alt="Register" />
                         </div>
                     </div>
-                    <div className="step-items">
+                    <div className="step-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="counter"><span>2</span></div>
                         <h3>Refer Clients</h3>
                         <p>Share your unique IB referral link or code.</p>
@@ -30,7 +30,7 @@ export default function HowtheSea() {
                             <img src={Refer} alt="Refer" />
                         </div>
                     </div>
-                    <div className="step-items">
+                    <div className="step-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <div className="counter"><span>3</span></div>
                         <h3>Clients Start Trading</h3>
                         <p>Referred clients trade forex and CFDs on Seaglobal FX.</p>
@@ -38,7 +38,7 @@ export default function HowtheSea() {
                             <img src={Clients} alt="Clients" />
                         </div>
                     </div>
-                    <div className="step-items">
+                    <div className="step-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
                         <div className="counter"><span>4</span></div>
                         <h3>Earn Commissions</h3>
                         <p>Receive commissions based on client trading activity and rebate structure.</p>
@@ -47,7 +47,7 @@ export default function HowtheSea() {
                         </div>
                     </div>
                 </div>
-                <div className="btncenter">
+                <div className="btncenter animate__animated animate__fadeInUp wow">
                     <OpenAccountBtn />
                 </div>
             </div>

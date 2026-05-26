@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  border: none;
+}
+
 @font-face {
   font-family: Euclid-semibold;
   src: url("./font/Euclid\ Circular\ A\ SemiBold.ttf");
@@ -58,7 +62,43 @@ button {
   cursor: pointer;
 }
 
-.container-One {
+.container-sm {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-md {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-base {
+  max-width: 1129px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-lg {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-xl {
+  max-width: 1334px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-2xl {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* .container-One {
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 20px;
@@ -92,4 +132,4 @@ button {
   max-width: 1010px;
   margin: 0 auto;
   padding: 0 20px;
-}
+} */

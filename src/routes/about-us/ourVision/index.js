@@ -9,23 +9,23 @@ export default function OurVision() {
             <div className="layer-black">
                 <img src={LayerBlackBG} alt="LayerBlackBG" />
             </div>
-            <div className="container2">
+            <div className="container-xl">
                 <div className="ourVision-grid">
                     <div className="subgrid">
-                        <div className="subgrid-items">
-                            <h2>Our <span>Vision</span></h2>
+                        <div className="subgrid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
+                            <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Our <span>Vision</span></h2>
                             <div className="box">
                                 <p>To build a transparent and secure trading ecosystem where traders operate with confidence, clarity, and trust.</p>
                             </div>
                         </div>
-                        <div className="subgrid-items">
-                            <h2>Our <span>Vision</span></h2>
+                        <div className="subgrid-items animate__animated animate__fadeInUp wow" data-wow-offset="200">
+                            <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Our <span>Vision</span></h2>
                             <div className="box">
                                 <p>Our mission is to provide traders with reliable infrastructure, secure fund handling, professional tools, and responsive support — while maintaining high operational discipline and global best practices.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="grid-items">
+                    <div className="grid-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
                         <img src={Mission} alt="mission" />
                     </div>
 

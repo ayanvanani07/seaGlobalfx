@@ -13,14 +13,14 @@ export default function HomepageHeroSection() {
         <div className="hero-grid">
           <div className="grid-items">
             <div className="items-content">
-              <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero">
+              <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero animate__animated animate__fadeInUp wow" data-wow-offset="200">
                 Low spreads • Fast execution • Regulated
               </button>
-              <h1>Institutional-Grade Trading for  <span> Global </span>  Markets</h1>
-              <p>Experience tight spreads with high-speed execution. Trade in a secure, fully regulated trading environment.</p>
+              <h1 className="animate__animated animate__fadeInUp wow" data-wow-offset="200">Institutional-Grade Trading for  <span> Global </span>  Markets</h1>
+              <p className="animate__animated animate__fadeInUp wow" data-wow-offset="200">Experience tight spreads with high-speed execution. Trade in a secure, fully regulated trading environment.</p>
 
 
-              <div className="btn-flex">
+              <div className="btn-flex animate__animated animate__fadeInUp wow" data-wow-offset="200">
                 <OpenAccountBtn />
                 <TryDemoBtn />
               </div>
@@ -28,7 +28,7 @@ export default function HomepageHeroSection() {
 
           </div>
           <div className="hero-gif-img">
-            <div className="hero-gif">
+            <div className="hero-gif animate__animated animate__zoomIn wow" data-wow-offset="200">
               <img src={HeroGif} alt="HeroGif" />
             </div>
           </div>

@@ -6,7 +6,7 @@ import './officeandRegistration.scss'
 export default function OfficeandRegistration() {
     return (
         <section className="officeandRegistration-details-section">
-            <div className="container2">
+            <div className="container-xl">
                 <div className="details-section">
                     <h2>Office and Registration <span> Details </span></h2>
                     <div className="address-details">
@@ -23,7 +23,6 @@ export default function OfficeandRegistration() {
                         <img src={Outlinevec} alt="Outlinevec" />
                     </div>
                 </div>
-
             </div>
             <div className="buidingImg">
                 <img src={Building} alt="building" />

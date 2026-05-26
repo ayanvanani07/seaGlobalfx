@@ -5,7 +5,7 @@ import './platformHighlights.scss'
 export default function PlatformHighlights() {
     return (
         <section className="platformHighlights-section">
-            <div className="container3">
+            <div className="container-lg">
                 <div className="section-grid">
                     <div className="grid-items">
                         <div className="ipad-img">
@@ -13,21 +13,21 @@ export default function PlatformHighlights() {
                         </div>
                     </div>
                     <div className="grid-items">
-                        <h2>Platform <span>Highlights</span></h2>
+                        <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Platform <span>Highlights</span></h2>
                         <div className="subgrid">
-                            <div className="subgrid-box">
+                            <div className="subgrid-box animate__animated animate__fadeInUp wow" data-wow-offset="100">
                                 <h3>Advanced Charting & Indicators</h3>
                                 <p>Analyze markets using multiple chart types, timeframes, and a wide range of technical indicators for informed decision-making.   </p>
                             </div>
-                            <div className="subgrid-box">
+                            <div className="subgrid-box animate__animated animate__fadeInUp wow" data-wow-offset="200">
                                 <h3>Advanced Charting & Indicators</h3>
                                 <p>Analyze markets using multiple chart types, timeframes, and a wide range of technical indicators for informed decision-making.   </p>
                             </div>
-                            <div className="subgrid-box">
+                            <div className="subgrid-box animate__animated animate__fadeInUp wow" data-wow-offset="100">
                                 <h3>Advanced Charting & Indicators</h3>
                                 <p>Analyze markets using multiple chart types, timeframes, and a wide range of technical indicators for informed decision-making.   </p>
                             </div>
-                            <div className="subgrid-box">
+                            <div className="subgrid-box animate__animated animate__fadeInUp wow" data-wow-offset="200">
                                 <h3>Advanced Charting & Indicators</h3>
                                 <p>Analyze markets using multiple chart types, timeframes, and a wide range of technical indicators for informed decision-making.   </p>
                             </div>

@@ -15,7 +15,7 @@
             gap: 10px;
             padding: 4px 16px 4px 4px;
             @include Euclid-semibold;
-            font-size: 16px;
+            font-size: $fs-md;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -30,7 +30,7 @@
 
         @media (max-width:576px) {
             .openaccount-btn {
-                font-size: 14px;
+                font-size: $fs-base;
 
                 img {
                     max-width: 35px;

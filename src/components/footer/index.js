@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
       <footer className="footer-align">
-        <div className="container3">
+        <div className="container-lg">
           <div className="footer-grid">
             <div className="grid-items">
               <div className="footer-logo">

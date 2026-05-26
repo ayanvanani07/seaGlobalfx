@@ -4,7 +4,7 @@ import './getinTouch.scss'
 export default function GetinTouch() {
     return (
         <section className="getinTouch-section">
-            <div className="container6">
+            <div className="container-sm ">
                 <div className="contact-from-grid">
                     <div className="content-items">
                         <h2> Get in<span>Touch</span></h2>

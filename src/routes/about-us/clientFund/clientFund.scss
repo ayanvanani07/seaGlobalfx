@@ -19,7 +19,7 @@
         }
     }
 
-    .container2 {
+    .container-xl {
         .tools-grid {
             display: grid;
             grid-template-columns: 450px 1fr;
@@ -235,7 +235,7 @@
     }
 
     @media (max-width:576px) {
-        .container3 {
+        .container-xl {
             padding: 0;
         }
     }

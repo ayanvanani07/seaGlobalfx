@@ -8,10 +8,10 @@ import './heroBanner.scss'
 export default function HeroBannerBlogs() {
     return (
         <section className="heroBannerBlog-section">
-            <div className="container3">
+            <div className="container-lg">
                 <div className="blog-grid">
-                    <div className="grid-img-items">
-                        <div className="img-items">
+                    <div className="grid-img-items animate__animated animate__fadeInUp wow" data-wow-offset="100">
+                        <div className="img-items ">
                             <img src={Grid1Img} alt="Grid1Img" />
                             <div className="layer">
 
@@ -27,7 +27,7 @@ export default function HeroBannerBlogs() {
                         </div>
                     </div>
                     <div className="subgrid-img">
-                        <div className="subgrid">
+                        <div className="subgrid animate__animated animate__fadeInUp wow" data-wow-offset="150">
                             <img src={Grid2Img} alt="Grid2Img" />
                             <div className="layer"></div>
                             <div className="img-content">
@@ -39,7 +39,7 @@ export default function HeroBannerBlogs() {
                                 </div>
                             </div>
                         </div>
-                        <div className="subgrid">
+                        <div className="subgrid animate__animated animate__fadeInUp wow" data-wow-offset="200">
                             <img src={Grid3Img} alt="Grid3Img" />
                             <div className="layer"></div>
                             <div className="img-content">
@@ -51,7 +51,7 @@ export default function HeroBannerBlogs() {
                                 </div>
                             </div>
                         </div>
-                        <div className="subgrid">
+                        <div className="subgrid animate__animated animate__fadeInUp wow" data-wow-offset="120">
                             <img src={Grid4Img} alt="Grid4Img" />
                             <div className="layer"></div>
                             <div className="img-content">

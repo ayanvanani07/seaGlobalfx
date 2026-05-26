@@ -67,7 +67,7 @@
 
                     .names {
                         p {
-                            font-size: 16px;
+                            font-size: $fs-md;
                             line-height: 26px;
                             font-weight: 500;
                             @include Euclid-reguler;
@@ -84,14 +84,14 @@
                         gap: 6px;
 
                         h3 {
-                            font-size: 16px;
+                            font-size: $fs-md;
                             font-weight: 500;
                             line-height: 24px;
                             // @include Euclid-reguler;
                         }
 
                         span {
-                            font-size: 11px;
+                            font-size: $fs-xl;
                             font-weight: 400;
                             letter-spacing: 0.4px;
                             line-height: 16px;
@@ -101,7 +101,7 @@
                     }
 
                     p {
-                        font-size: 16px;
+                        font-size: $fs-md;
                         font-weight: 500;
                         line-height: 24px;
                         margin-left: 6px;

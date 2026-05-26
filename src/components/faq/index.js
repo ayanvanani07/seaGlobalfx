@@ -5,7 +5,7 @@ import "./faq.scss";
 export default function Faq() {
   return (
     <section className="faq-section">
-      <div className="container4">
+      <div className="container-base">
         <h2>
           Frequently Asked <span>Questions</span>
         </h2>

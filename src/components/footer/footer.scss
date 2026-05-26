@@ -7,7 +7,7 @@
     background: #141414;
     position: relative;
 
-    .container3 {
+    .container-lg {
         .footer-grid {
             display: grid;
             grid-template-columns: 264px 1fr 318px;
@@ -43,7 +43,7 @@
                 }
 
                 h5 {
-                    font-size: $fs-xl;
+                    font-size: $fs-2xl;
                     font-weight: 500;
                     line-height: 22.5px;
                     font-style: normal;

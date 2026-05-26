@@ -25,7 +25,7 @@ export default function ContactHeroSection() {
 
                     </div>
                     <div className="hero-gif-img">
-                        <div className="hero-gif">
+                        <div className="hero-gif animate__animated animate__zoomIn wow" data-wow-offset="100">
                             <img src={ContactBanner} alt="ContactBanner" />
                         </div>
                     </div>

@@ -1,13 +1,14 @@
 import React from "react";
 import SeaGlobalFXLogo from "../../assets/logo/logo.svg";
 import LoginIcon from "../../assets/svgIcons/loginIcon.svg";
-import MobileMenuIcon from "../../assets/svgIcons/menu.png";
+// import MobileMenuIcon from "../../assets/svgIcons/menu.png";
+import MobileMenuIcon from "../../assets/svgIcons/mobileMenu.svg"
 import "./header.scss";
 
 export default function Header() {
   return (
     <header>
-      <div className="container-One">
+      <div className="container-2xl">
         <div className="header-align">
           <div className="logo">
             <img src={SeaGlobalFXLogo} alt="SeaGlobalFXLogo" />

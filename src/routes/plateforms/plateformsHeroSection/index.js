@@ -14,10 +14,10 @@ export default function PlateFormsHeroSection() {
                     <div className="grid-items">
                         <div className="items-content">
                             <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero">
-                                Desktop • Web • Mobile 
+                                Desktop • Web • Mobile
                             </button>
-                            <h1>Trade Your Way with Powerful, Flexible Trading<span> Platforms </span></h1>
-                            <p>Trade your way with Sea Global’s powerful and flexible trading platforms, designed to support different trading styles, experience levels, and market strategies—whether you trade from desktop, web, or mobile.</p>
+                            <h1 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Trade Your Way with Powerful, Flexible Trading<span> Platforms </span></h1>
+                            <p className="animate__animated animate__fadeInUp wow" data-wow-offset="100"> Trade your way with Sea Global’s powerful and flexible trading platforms, designed to support different trading styles, experience levels, and market strategies—whether you trade from desktop, web, or mobile.</p>
 
 
                             <div className="btn-flex">
@@ -28,7 +28,7 @@ export default function PlateFormsHeroSection() {
 
                     </div>
                     <div className="hero-gif-img">
-                        <div className="hero-gif">
+                        <div className="hero-gif animate__animated animate__zoomIn wow" data-wow-offset="100" >
                             <img src={Platformbannerimg} alt="Platformbannerimg" />
                         </div>
                     </div>

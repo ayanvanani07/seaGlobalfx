@@ -11,20 +11,20 @@ import './oneMarket.scss'
 export default function OneMarket() {
     return (
         <section className="oneMarket-section">
-            <div className="mobileImg">
+            <div className="mobileImg animate__animated animate__fadeInLeft wow" data-wow-offset="100">
                 <img src={MobileImg} alt="mobileImg" />
             </div>
-            <div className="laptopImg">
+            <div className="laptopImg animate__animated animate__fadeInRight wow " data-wow-offset="100">
                 <img src={Thinkpad} alt="thinkpadLaptopImg" />
             </div>
-            <div className="starImg">
+            <div className="starImg animate__animated  animate__rotateIn wow" data-wow-offset="100">
                 <img src={Star} alt="StartImg" />
             </div>
-            <div className="container2">
+            <div className="container-xl">
                 <h2>One market. <br /> Multiple platforms.<br /> <span>Zero</span>  compromise.</h2>
                 <p>Access the markets through industry-leading trading platforms built for speed, flexibility, and performance. Whether you trade manually or algorithmically, on desktop or mobile, our platforms are designed to support every trading style.</p>
 
-                <div className="plateform-flex">
+                <div className="plateform-flex animate__animated  animate__fadeIn wow" data-wow-offset="200">
                     <div className="mt4">
                         <img src={Mt4} alt="Mt4" />
                         <span>MT4</span>

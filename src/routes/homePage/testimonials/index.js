@@ -8,8 +8,8 @@ export default function Testimonials() {
     return (
         <section className="testimonials-section">
             <div className="title-section">
-                <h2>Trusted by Traders <span>Worldwide</span></h2>
-                <p>Our platform is recognized for its commitment to transparent pricing, reliable execution, and professional service. Thousands of traders choose us for our technology, support, and trading conditions.</p>
+                <h2 className="animate__animated animate__fadeInUp wow" data-wow-offset="50">Trusted by Traders <span>Worldwide</span></h2>
+                <p className="animate__animated animate__fadeInUp wow" data-wow-offset="50">Our platform is recognized for its commitment to transparent pricing, reliable execution, and professional service. Thousands of traders choose us for our technology, support, and trading conditions.</p>
             </div>
 
             <div className="testimonials-card-section">

@@ -6,9 +6,9 @@
     padding: 110px 0;
     background-color: #f1f1f1;
 
-    .container4 {
+    .container-base {
         h2 {
-            font-size: $fs-3xl;
+            font-size: $fs-5xl;
             line-height: 108%;
             font-weight: 600;
             text-align: center;
@@ -28,7 +28,7 @@
 
         @media (max-width:576px) {
             h2 {
-                font-size: $fs-2xl;
+                font-size: $fs-4xl;
             }
         }
 

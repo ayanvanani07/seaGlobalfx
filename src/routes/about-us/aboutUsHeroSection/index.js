@@ -15,8 +15,8 @@ export default function AboutusHeroSection() {
                             <button aria-label="Low spreads Fast execution  Regulated" className="topBtn-hero">
                                 We're Here To Help
                             </button>
-                            <h1>A Trusted Global Trading <br /><span> Partner  </span></h1>
-                            <p>Sea Global FX is a global trading broker focused on delivering a transparent, secure, and professionally managed trading environment.</p>
+                            <h1 className="animate__animated animate__fadeInUp wow" data-wow-offset="100">A Trusted Global Trading <br /><span> Partner  </span></h1>
+                            <p className="animate__animated animate__fadeInUp wow" data-wow-offset="100">Sea Global FX is a global trading broker focused on delivering a transparent, secure, and professionally managed trading environment.</p>
 
                             <div className="btn-flex">
                                 <OpenAccountBtn />
@@ -24,7 +24,7 @@ export default function AboutusHeroSection() {
                             </div>
                         </div>
                     </div>
-                    <div className="hero-gif-img">
+                    <div className="hero-gif-img " data-wow-offset="100">
                         <div className="hero-gif">
                             <img src={CompanyBanner} alt=" CompanyBanner" />
                         </div>
