@@ -1,0 +1,131 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+
+.officeandRegistration-details-section {
+    padding: 100px 0 0;
+    position: relative;
+
+    .container2 {
+
+        .details-section {
+            max-width: 560px;
+            padding: 0 0 40px;
+
+            h2 {
+                background: var(--Hero-Text, linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%));
+                -webkit-text-fill-color: #0000;
+                -webkit-background-clip: text;
+                background-clip: text;
+                margin: 0 0 27px;
+                font-size: 40px;
+                @include GCarturmDemo-Medium;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+
+                span {
+                    background: var(--Primary, linear-gradient(90deg, #e8bc33 10%, #b07a09 100%));
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+
+            @media (max-width:576px) {
+                h2 {
+                    margin: 0 0 40px;
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
+            .address-details {
+                div {
+                    padding: 0 0 27px;
+
+                    h3 {
+                        color: #747474;
+                        margin: 0 0 16px;
+                        font-size: 24px;
+                        @include Euclid-semibold;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 100%;
+                    }
+
+                    p {
+                        color: #747474;
+                        max-width: 450px;
+                        font-size: 20px;
+                        @include Euclid-reguler;
+
+                        font-weight: 400;
+                        line-height: 100%;
+                    }
+
+                    @media (max-width:576px) {
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+
+            .address-details:last-child {
+                padding: 0;
+            }
+
+            .vector-img {
+                img {
+                    display: block;
+                }
+            }
+
+            @media (max-width:576px) {
+                .vector-img {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        @media (max-width:576px) {
+            .details-section {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .buidingImg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+            max-width: 760px;
+            display: block;
+        }
+    }
+
+    @media (max-width:576px) {
+        .buidingImg {
+            position: inherit;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+@media (max-width:576px) {
+    .officeandRegistration-details-section {
+        padding: 60px 0 0;
+    }
+}

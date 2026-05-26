@@ -1,0 +1,194 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+
+.contact-HeroSection {
+    .herobg-img {
+        background-image: url('../../../assets/images/common-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100dvh;
+        background-position: bottom;
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 470px;
+            gap: 20px;
+            height: 100dvh;
+            padding-left: max(20px, 50vw - 670px);
+            padding-right: 80px;
+
+            .grid-items {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .items-content {
+                    .topBtn-hero {
+                        border: none;
+                        border: 1px solid none;
+                        color: #252525;
+                        text-align: center;
+                        text-transform: capitalize;
+                        background: #ffffff3d;
+                        border-radius: 50px;
+                        padding: 10px 16px;
+                        @include Euclid-reguler;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 105%;
+                        position: relative;
+                        margin: 0 0 20px;
+                    }
+
+                    .topBtn-hero::before {
+                        content: "";
+                        -webkit-mask-composite: xor;
+                        pointer-events: none;
+                        background: linear-gradient(#30303066 0%, #0000 100%);
+                        border-radius: 24px;
+                        padding: 1px;
+                        transition: all .3s ease-in-out;
+                        position: absolute;
+                        inset: 0;
+                        -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                        -webkit-mask-position: 0 0, 0 0;
+                        -webkit-mask-size: auto, auto;
+                        -webkit-mask-repeat: repeat, repeat;
+                        -webkit-mask-clip: content-box, border-box;
+                        -webkit-mask-origin: content-box, border-box;
+                        -webkit-mask-composite: xor;
+                        mask-composite: exclude;
+                        -webkit-mask-source-type: auto, auto;
+                        mask-mode: match-source, match-source;
+                    }
+
+                    h1 {
+                        background: linear-gradient(93deg, #252525 0%, #4e4e4e 24.34%, #4e4e4e 52.49%, #4e4e4e 71.46%, #252525 99.25%);
+                        -webkit-text-fill-color: #0000;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        max-width: 663px;
+                        margin: 0 0 20px;
+                        @include GCarturmDemo-SemiBold;
+                        font-size: 56px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 105%;
+
+                        span {
+                            background: linear-gradient(90deg, #daa71d 0%, #ae7708 100%);
+                            ;
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: #0000;
+                        }
+                    }
+
+                    @media (max-width:576px) {
+                        h1 {
+                            font-size: 30px;
+                            line-height: 40px;
+                            margin: 0 0 20px;
+                        }
+                    }
+
+                    p {
+                        color: #555;
+                        max-width: 714px;
+                        margin: 0 0 20px;
+                        @include Euclid-reguler;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 105%;
+                    }
+
+                    @media (max-width:576px) {
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+
+                        }
+                    }
+
+                    .btn-flex {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                    }
+
+                    @media (max-width:576px) {
+                        .btn-flex {
+                            justify-content: center;
+                        }
+                    }
+
+                }
+
+            }
+
+            .hero-gif-img {
+                height: 100%;
+
+                .hero-gif {
+                    height: 100%;
+                    display: flex;
+                    align-items: end;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+
+
+                }
+
+                @media (max-width:1024px) {
+                    .hero-gif {
+                        max-width: 60%;
+                    }
+                }
+
+                @media (max-width:576px) {
+                    .hero-gif {
+                        height: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        @media (max-width:1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                height: auto;
+                padding: 0 20px;
+                gap: 40px;
+            }
+        }
+
+    }
+}
+
+@media (max-width:1024px) {
+    .contact-HeroSection {
+        .herobg-img {
+            padding: 120px 0 0;
+            height: auto;
+            // width: 100%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .contact-HeroSection {
+        .herobg-img {
+            padding: 120px 0 0;
+            height: auto;
+            // width: 100%;
+        }
+    }
+}

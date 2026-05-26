@@ -1,0 +1,150 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/theme/theme.scss' as *;
+@use '../../../scss/typography/typography.scss' as *;
+
+.waysToReachUs-section {
+    background: #141414;
+    padding: 100px 0;
+    position: relative;
+
+    .container2 {
+        .blackLayer-Img {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .section-title {
+            h2 {
+                -webkit-text-fill-color: #0000;
+                text-align: center;
+                background: linear-gradient(93deg, #fff 0%, #f1f1f1 24.34%, #ddd 52.49%, #f1f1f1 71.46%, #fff 99.25%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                margin: 0 0 32px;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 105%;
+                position: relative;
+                @include GCarturmDemo-SemiBold;
+
+                span {
+                    background: var(--Primary, linear-gradient(90deg, #e8bc33 10%, #b07a09 100%));
+                    -webkit-text-fill-color: #0000;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+
+            @media (max-width:576px) {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+
+        .reach-us-grid {
+            grid-template-columns: 1fr 256px 1fr;
+            gap: 24px;
+            max-width: 1052px;
+            margin: 0 auto;
+            display: grid;
+            position: relative;
+
+            .grid-items {
+                background: linear-gradient(#ffffff1a 0%, #fff0 100%);
+                border-radius: 24px;
+                padding: 34px 24px 24px;
+                position: relative;
+                transition: .6s ease-in-out;
+
+                .img-icon {
+                    justify-content: center;
+                    padding: 0 0 22px;
+                    display: flex;
+
+                    img {
+                        display: block;
+                    }
+                }
+
+                a,
+                p {
+                    cursor: pointer;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 22px;
+                    @include Euclid-reguler;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 105%;
+                    display: block;
+                }
+
+                span {
+                    font-size: 18px;
+                }
+
+
+
+            }
+
+            .grid-items::before {
+                content: "";
+                -webkit-mask-composite: xor;
+                pointer-events: none;
+                background: linear-gradient(#fff3 0%, #0000 100%);
+                border-radius: 24px;
+                padding: 1px;
+                transition: all .3s ease-in-out;
+                position: absolute;
+                inset: 0;
+                -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+                -webkit-mask-position: 0 0, 0 0;
+                -webkit-mask-size: auto, auto;
+                -webkit-mask-repeat: repeat, repeat;
+                -webkit-mask-clip: content-box, border-box;
+                -webkit-mask-origin: content-box, border-box;
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                -webkit-mask-source-type: auto, auto;
+                mask-mode: match-source, match-source;
+            }
+
+            .grid-items:hover::before {
+                background: linear-gradient(320deg, #ffffffb3 0%, #0000 100%);
+            }
+
+            .grid-items:hover {
+                transform: translateY(-6px);
+            }
+
+        }
+
+        @media (max-width:576px) {
+            .reach-us-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    }
+
+
+
+
+
+}
+
+@media (max-width:576px) {
+    .waysToReachUs-section {
+        padding: 60px 0;
+    }
+}
