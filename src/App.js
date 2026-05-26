@@ -30,11 +30,11 @@ function App() {
         <Footer />
       </div> */}
 
-      {/* <div className="accounts">
+      <div className="accounts">
         <Header />
         <Accounts />
         <Footer />
-      </div> */}
+      </div>
 
       {/* <div className="plateforms">
         <Header />
@@ -54,11 +54,11 @@ function App() {
         <Footer />
       </div> */}
 
-      <div className="blogs">
+      {/* <div className="blogs">
         <Header />
         <Blogs />
         <Footer />
-      </div>
+      </div> */}
 
       {/* <div className="contactUs">
         <Header />
