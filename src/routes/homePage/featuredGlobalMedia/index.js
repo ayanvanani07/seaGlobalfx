@@ -1,96 +1,125 @@
 import React from "react";
-import MarketInsider from "../../../assets/svgIcons/markets-insider.svg"
-import TechBullionLogo from "../../../assets/svgIcons/TechBullionLogo.webp"
-import ManilaLogoMain from "../../../assets/svgIcons/manila-logo-main.png"
-import DigitalJournal from "../../../assets/svgIcons/Digital-Journal.webp"
-import ApIcon from "../../../assets/svgIcons/ap-icon.png"
+import MarketInsider from "../../../assets/svgIcons/markets-insider.svg";
+import TechBullionLogo from "../../../assets/svgIcons/TechBullionLogo.webp";
+import ManilaLogoMain from "../../../assets/svgIcons/manila-logo-main.png";
+import DigitalJournal from "../../../assets/svgIcons/Digital-Journal.webp";
+import ApIcon from "../../../assets/svgIcons/ap-icon.png";
 import Marquee from "react-fast-marquee";
-import './featuredinGlobalMedia.scss'
+import "./featuredinGlobalMedia.scss";
 
 export default function FeaturedGlobalMedia() {
     return (
         <section className="featuredGlobalMedia-section">
             <div className="flexbox">
-                <div className="content">
-                    <h2>Featured in <br /> <span>Global</span> Media</h2>
-                    <p>Our brand and market insights have been featured across leading financial and industry media outlets, reinforcing our reputation as a trusted market participant.</p>
 
+                <div
+                    className="content animate__animated animate__fadeInUp wow"
+                    data-wow-offset="50"
+                >
+                    <h2>
+                        Featured in <br />
+                        <span>Global</span> Media
+                    </h2>
+
+                    <p>
+                        Our brand and market insights have been featured across
+                        leading financial and industry media outlets, reinforcing
+                        our reputation as a trusted market participant.
+                    </p>
                 </div>
+
                 <div className="marquee-animations">
+
                     <Marquee>
                         <div className="mini-card-marquee">
                             <div className="companyLogo">
-                                <img src={MarketInsider} alt="MarketInsider" />
+                                <img src={MarketInsider} alt="MarketInsider" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
                                 <img src={TechBullionLogo} alt="TechBullionLogo" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={ManilaLogoMain} alt="ManilaLogoMain" />
+                                <img src={ManilaLogoMain} alt="ManilaLogoMain" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={DigitalJournal} alt="DigitalJournal" />
+                                <img src={DigitalJournal} alt="DigitalJournal" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={ApIcon} alt="ApIcon" />
+                                <img src={ApIcon} alt="ApIcon" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={ManilaLogoMain} alt="ManilaLogoMain" />
+                                <img src={ManilaLogoMain} alt="ManilaLogoMain" loading="lazy" />
                             </div>
                         </div>
                     </Marquee>
-                    <div className="spacer-marquee">
-                    </div>
+
+                    <div className="spacer-marquee"></div>
+
                     <Marquee direction="right">
                         <div className="mini-card-marquee">
                             <div className="companyLogo">
-                                <img src={MarketInsider} alt="MarketInsider" />
+                                <img src={MarketInsider} alt="MarketInsider" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={TechBullionLogo} alt="TechBullionLogo" />
+                                <img src={TechBullionLogo} alt="TechBullionLogo" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={ManilaLogoMain} alt="ManilaLogoMain" />
+                                <img src={ManilaLogoMain} alt="ManilaLogoMain" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={DigitalJournal} alt="DigitalJournal" />
+                                <img src={DigitalJournal} alt="DigitalJournal" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={ApIcon} alt="ApIcon" />
+                                <img src={ApIcon} alt="ApIcon" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={ManilaLogoMain} alt="ManilaLogoMain" />
+                                <img src={ManilaLogoMain} alt="ManilaLogoMain" loading="lazy" />
                             </div>
                         </div>
                     </Marquee>
+
                     <div className="spacer-marquee"></div>
-                    <Marquee direction="left" >
+
+                    <Marquee direction="left">
                         <div className="mini-card-marquee">
                             <div className="companyLogo last-marquee">
-                                <img src={DigitalJournal} alt="DigitalJournal" />
+                                <img src={DigitalJournal} alt="DigitalJournal" loading="lazy" />
                             </div>
 
                             <div className="companyLogo">
-                                <img src={MarketInsider} alt="MarketInsider" />
+                                <img src={MarketInsider} alt="MarketInsider" loading="lazy" />
                             </div>
 
                             <div className="companyLogo">
-                                <img src={ManilaLogoMain} alt="ManilaLogoMain" />
+                                <img src={ManilaLogoMain} alt="ManilaLogoMain" loading="lazy" />
                             </div>
 
                             <div className="companyLogo">
-                                <img src={ApIcon} alt="ApIcon" />
+                                <img src={ApIcon} alt="ApIcon" loading="lazy" />
                             </div>
-                            <div className="companyLogo last-marquee" >
-                                <img src={TechBullionLogo} alt="TechBullionLogo" />
+
+                            <div className="companyLogo last-marquee">
+                                <img src={TechBullionLogo} alt="TechBullionLogo" loading="lazy" />
                             </div>
+
                             <div className="companyLogo">
-                                <img src={ManilaLogoMain} alt="ManilaLogoMain" />
+                                <img src={ManilaLogoMain} alt="ManilaLogoMain" loading="lazy" />
                             </div>
                         </div>
                     </Marquee>
+
                 </div>
             </div>
         </section>
-    )
+    );
 }

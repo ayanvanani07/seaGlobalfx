@@ -11,61 +11,61 @@ export default function Header() {
       <div className="container-2xl">
         <div className="header-align">
           <div className="logo">
-            <img src={SeaGlobalFXLogo} alt="SeaGlobalFXLogo" />
+            <img src={SeaGlobalFXLogo} alt="SeaGlobalFXLogo" loading="lazy" />
           </div>
           <div className="left-nav">
             <nav>
               <div className="dropdownMenu">
                 <div className="dropdown">
-                  <a href="#" className="dropD">
+                  <a href="-" className="dropD" aria-label="Markets">
                     Markets
                   </a>
                   <div className="element-show">
                     <div className="dropdown-ele">
-                      <a href="#">Forex</a>
-                      <a href="#">Indices</a>
-                      <a href="#">Commodities</a>
-                      <a href="#">Stocks</a>
-                      <a href="#">Crypto</a>
-                      <a href="#">ETFs</a>
+                      <a href="-" aria-label="Forex">Forex</a>
+                      <a href="-" aria-label="Indices">Indices</a>
+                      <a href="-" aria-label="Commodities">Commodities</a>
+                      <a href="-" aria-label="Stocks">Stocks</a>
+                      <a href="-" aria-label="Crypto">Crypto</a>
+                      <a href="-" aria-label="ETFs">ETFs</a>
                     </div>
                   </div>
                 </div>
-                <a href="#" className="noDropd">
+                <a href="-" className="noDropd" aria-label="Accounts">
                   Accounts
                 </a>
                 <div className="dropdown">
                   <div className="drop-hover">
-                    <a href="#" className="dropD">
+                    <a href="-" className="dropD" aria-label="Trade">
                       Trade
                     </a>
                     <div className="element-show">
                       <div className="dropdown-ele">
-                        <a href="#">Plateforms</a>
-                        <a href="#">Trading Solutions</a>
-                        <a href="#">Trade and Achieve</a>
+                        <a href="-" aria-label="Platforms">Platforms</a>
+                        <a href="-" aria-label="Trading Solutions">Trading Solutions</a>
+                        <a href="-" aria-label="Trade and Achieve">Trade and Achieve</a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <a href="#" className="noDropd">
+                <a href="-" className="noDropd" aria-label="Partners">
                   Partners
                 </a>
                 <div className="dropdown">
-                  <a href="#" className="dropD">
+                  <a href="-" className="dropD" aria-label="Company">
                     Company
                   </a>
                   <div className="element-show">
                     <div className="dropdown-ele">
-                      <a href="#">About-Us</a>
-                      <a href="#">Contact-Us</a>
+                      <a href="-" aria-label="About Us">About Us</a>
+                      <a href="-" aria-label="Contact Us">Contact Us</a>
                     </div>
                   </div>
                 </div>
-                <a href="#" className="noDropd">
+                <a href="-" className="noDropd" aria-label="Blogs">
                   Blogs
                 </a>
-                <a href="#" className="noDropd">
+                <a href="-" className="noDropd" aria-label="Contact Us">
                   Contact Us
                 </a>
               </div>

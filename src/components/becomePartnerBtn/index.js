@@ -5,8 +5,8 @@ import './becomePartnersbtn.scss'
 export default function BecomePartnersbtn() {
     return (
         <section className="becomePartnersbtn-section">
-            <a href="#">
-                <button className="becomePartners-btn">
+            <a href="-" aria-label="Become a Partner">
+                <button className="becomePartners-btn" aria-label="Become a Partner">
                     <img src={UserIcon} alt="UserIcon" />
                     <span>Become a Partner</span>
                 </button>

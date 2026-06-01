@@ -80,12 +80,12 @@
 
                     .sub-grid-card:nth-child(1),
                     .sub-grid-card:nth-child(2) {
-                        height: 400px;
+                        min-height: 400px;
 
                         .card {
                             background: #ffffff1a;
                             border-radius: 24px;
-                            height: 154px;
+                            min-height: 154px;
                             margin: 0 0 16px;
                             padding: 24px 16px;
                             position: relative;
@@ -105,6 +105,7 @@
                                 img {
                                     max-width: 100%;
                                     transition: .3s ease-in-out;
+                                    will-change: transform;
                                 }
                             }
 
@@ -139,6 +140,7 @@
                             .arrowRotate {
                                 img {
                                     transform: rotate(40deg);
+                                    will-change: transform;
                                 }
                             }
                         }

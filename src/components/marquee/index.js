@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import DownGraph from "../../assets/images/down-graph.png"
 import Upgraph from "../../assets/images/up-graph.png"
 import Country1 from "../../assets/images/country1.png"
@@ -22,9 +22,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         4.65342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -48,9 +48,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         1.45342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -73,9 +73,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         4.65342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -99,9 +99,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         1.45342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -124,9 +124,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         4.65342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -150,9 +150,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         1.45342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -175,9 +175,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         4.65342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -201,9 +201,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         1.45342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -226,9 +226,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         4.65342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>
@@ -252,9 +252,9 @@ export default function MarqueeAnimate() {
                             </div>
                             <div className="data-info">
                                 <div className="doller">
-                                    <h3>
+                                    <h2>
                                         1.45342
-                                    </h3>
+                                    </h2>
                                     <span>
                                         USD
                                     </span>

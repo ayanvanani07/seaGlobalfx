@@ -76,8 +76,8 @@ export default function Footer() {
                   Castries, Saint Lucia – 838
                 </p>
                 <p>Registration Number: 2025- 00352</p>
-                <a href="#">Email: support@seaglobalfx.com</a>
-                <a href="#">
+                <a href="-" aria-label="email">Email: support@seaglobalfx.com</a>
+                <a href="-" aria-label="phone">
                   Phone: <br />
                   +971 58 261 9955
                 </a>
@@ -85,19 +85,19 @@ export default function Footer() {
               <div className="sub-grid-items">
                 <h3>Quick Links</h3>
                 <div className="heading-line"></div>
-                <a href="#">Accounts</a>
-                <a href="#">Platforms</a>
-                <a href="#">Blogs</a>
-                <a href="#">About Us</a>
-                <a href="#">Trading Solutions</a>
+                <a href="-" aria-label="Accounts">Accounts</a>
+                <a href="-" aria-label="Platforms">Platforms</a>
+                <a href="-" aria-label="Blogs">Blogs</a>
+                <a href="-" aria-label="About Us">About Us</a>
+                <a href="-" aria-label="Trading Solutions">Trading Solutions</a>
               </div>
               <div className="sub-grid-items">
                 <h3>Support</h3>
                 <div className="heading-line"></div>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Telegram Group</a>
-                <a href="#">Refund Policy</a>
+                <a href="-" aria-label="Terms of Service">Terms of Service</a>
+                <a href="-" aria-label="Privacy Policy">Privacy Policy</a>
+                <a href="-" aria-label="Telegram Group">Telegram Group</a>
+                <a href="-" aria-label="Refund Policy">Refund Policy</a>
               </div>
             </div>
             <div className="grid-items last-grid">
@@ -107,14 +107,20 @@ export default function Footer() {
                 promise.
               </p>
               <div className="email-input">
-                <input type="emqail" placeholder="Enter your Email" />
+                <input type="email" placeholder="Enter your Email" />
                 <div className="inputbtn">
                   <button aria-label="Submit">Submit</button>
                 </div>
               </div>
               <div className="checkBox-input">
-                <input type="checkbox" />
-                <span>I agree to the Privacy Policy</span>
+                <input
+                  id="privacy-policy"
+                  type="checkbox"
+                  aria-label="I agree to the Privacy Policy"
+                />
+                <label htmlFor="privacy-policy">
+                  I agree to the Privacy Policy
+                </label>
               </div>
             </div>
           </div>

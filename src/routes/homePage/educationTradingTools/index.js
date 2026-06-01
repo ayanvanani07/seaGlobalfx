@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import ArrowRotate from "../../../assets/svgIcons/rotate-arrow.svg"
 import Market from "../../../assets/svgIcons/market.svg"
 import './educationTradingTools.scss'

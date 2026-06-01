@@ -1,16 +1,16 @@
 import "./App.css";
-import Faq from "./components/faq";
+// import Faq from "./components/faq";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import WhatsappIcon from "./components/whatsappIcon";
-import AboutUs from "./routes/about-us";
-import Accounts from "./routes/accounts";
-import Blogs from "./routes/blogs";
-import ContactUs from "./routes/contact-us";
-import Forex from "./routes/forex";
+// import AboutUs from "./routes/about-us";
+// import Accounts from "./routes/accounts";
+// import Blogs from "./routes/blogs";
+// import ContactUs from "./routes/contact-us";
+// import Forex from "./routes/forex";
 import HomePage from "./routes/homePage";
-import Partners from "./routes/partners";
-import Plateforms from "./routes/plateforms";
+// import Partners from "./routes/partners";
+// import Plateforms from "./routes/plateforms";
 
 function App() {
   return (
@@ -18,11 +18,11 @@ function App() {
       <div>
         <WhatsappIcon />
       </div>
-      {/* <div className="homepage">
+      <div className="homepage">
         <Header />
         <HomePage />
         <Footer />
-      </div> */}
+      </div>
 
       {/* <div className="forex">
         <Header />
@@ -30,11 +30,11 @@ function App() {
         <Footer />
       </div> */}
 
-      <div className="accounts">
+      {/* <div className="accounts">
         <Header />
         <Accounts />
         <Footer />
-      </div>
+      </div> */}
 
       {/* <div className="plateforms">
         <Header />
